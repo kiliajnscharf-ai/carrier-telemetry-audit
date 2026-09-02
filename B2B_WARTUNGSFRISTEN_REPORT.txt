@@ -1,6 +1,6 @@
 ================================================================================
 B2B-WARTUNGSFRISTEN & KALIBRIERUNGS-AUDIT (DIN 31051 / DGUV V3)
-Prüfzeitpunkt:     02.09.2026 06:42:33
+Prüfzeitpunkt:     02.09.2026 07:41:21
 Stichtag:          02.09.2026
 Liegenschaft:      Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
 ================================================================================
