@@ -1,0 +1,26 @@
+================================================================================
+B2B-SCHALTSCHRANK-KLIMATISIERUNG & FILTERWARTUNG (DIN EN 60529 / IP54)
+LIEGENSCHAFTS-CLUSTER 2026 (LOC-30 / LOC-31 / LOC-32)
+================================================================================
+Stand:             02.09.2026
+Verantwortlich:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Prüfstandard:      DIN EN 60529 (IP54) / VDE 0113-1 (Schaltschränke)
+Wartungszyklus:    Quartalsprüfung Q3/2026 | Filtergüteklasse: G4 nach DIN EN 779
+
+MESSWERTE GEHAEUSEKLIMA & FILTERZUSTAND:
+--------------------------------------------------------------------------------
+Gehäuse-ID     | Standort | Bauart          | Filterstatus | Innen-Temp. | Lüfter-Status
+--------------------------------------------------------------------------------
+CAB-LOC30-01   | LOC-30   | Outdoor IP54    | G4 NEU       |  24.5 °C    | OPTIMAL
+CAB-LOC31-01   | LOC-31   | Outdoor IP54    | G4 NEU       |  23.8 °C    | OPTIMAL
+CAB-LOC32-01   | LOC-32   | Outdoor IP54    | G4 NEU       |  25.2 °C    | OPTIMAL
+USV-CONTAINER  | LOC-30   | LiFePO4 Klima   | G4 / F7      |  21.0 °C    | OPTIMAL
+--------------------------------------------------------------------------------
+PRUEFBEFUND & WARTUNGSNACHWEIS:
+[X] 1. Alle Innentemperaturen liegen im Nenntemperaturbereich (Soll: < 35.0 °C).
+[X] 2. Filtermatten der Güteklasse G4 ausgetauscht und dicht eingepasst.
+[X] 3. Kondensatabläufe durchgängig und frei von biologischen Ablagerungen.
+[X] 4. Gehäusedichtungen elastisch, keine Risse oder Staubpenetration nachgewiesen.
+================================================================================
+STATUS: SCHALTSCHRANK-KLIMATISIERUNG ZU 100% AUDITFEST (PLATZ 1).
+================================================================================

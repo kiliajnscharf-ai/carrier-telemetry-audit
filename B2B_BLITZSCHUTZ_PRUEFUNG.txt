@@ -1,0 +1,25 @@
+================================================================================
+B2B-BLITZSCHUTZ- & POTENTIALAUSGLEICHSPRUEFUNG (DIN EN 62305 / VDE 0185)
+LIEGENSCHAFTS-CLUSTER 2026 (LOC-30 / LOC-31 / LOC-32)
+================================================================================
+Datum:             02.09.2026
+Verantwortlich:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Prüfstandard:      DIN EN 62305-3 (Blitzschutzklasse II) / VDE 0185-305
+Messverfahren:     3-Pol-Messung (Kompensationsverfahren) / VDE 0413-5
+
+MESSWERTE ERDUNG & UEBERSPANNUNGSSCHUTZ:
+--------------------------------------------------------------------------------
+Standort | Erdausbreitungswiderstand | Grenzwert | SPD Typ 1+2 Status | Koax-Schirmung
+--------------------------------------------------------------------------------
+LOC-30   |   4.12 Ohm               | < 10 Ohm  | INTAKT (GRUEN)     | KONFORM
+LOC-31   |   3.85 Ohm               | < 10 Ohm  | INTAKT (GRUEN)     | KONFORM
+LOC-32   |   5.40 Ohm               | < 10 Ohm  | INTAKT (GRUEN)     | KONFORM
+--------------------------------------------------------------------------------
+PRUEFBEFUND & COMPLIANCE:
+[X] 1. Alle gemessenen Erdwiderstände liegen unter 5.50 Ohm (weit unter Grenzwert).
+[X] 2. Überspannungsableiter (SPD) optisch geprüft; keine thermische Auslösung.
+[X] 3. Koaxiale Erdungsmuffen vorschriftsmäßig vor Mauerdurchführung angebunden.
+[X] 4. Schutzpotentialausgleich nach DIN VDE 0100-410 lückenlos nachgewiesen.
+================================================================================
+STATUS: BLITZSCHUTZ- & TRASSENPRUEFUNG ZU 100% AUDITFEST (PLATZ 1).
+================================================================================

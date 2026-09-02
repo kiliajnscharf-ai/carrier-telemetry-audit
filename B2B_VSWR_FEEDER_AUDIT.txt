@@ -1,0 +1,27 @@
+================================================================================
+B2B-HOCHFREQUENZ-LEITUNGSPRUEFUNG & VSWR-REFLEKTOMETRIE (IEC 60966)
+LIEGENSCHAFTS-CLUSTER 2026 (LOC-30 / LOC-31 / LOC-32)
+================================================================================
+Stand:             02.09.2026
+Verantwortlich:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Prüfstandard:      DIN EN 50117 / IEC 60966-1 (HF-Koaxialkabel)
+Messgerät:         Präzisions-Netzwerkanalysator (FDR - Frequency Domain Reflectometry)
+Sollwert-Grenze:   VSWR < 1.20 | Return Loss > 20.8 dB
+
+MESSERGEBNISSE SPEISELEITUNGEN & STECKVERBINDER:
+--------------------------------------------------------------------------------
+Sektor / Trasse | Kabeltyp              | Band / Zweck     | VSWR   | Return Loss | Status
+--------------------------------------------------------------------------------
+LOC-30-SEC1     | 7/8 Zoll Cellflex     | 700/800/900 MHz  |   1.12 |   24.9 dB   | OPTIMAL (PASS)
+LOC-30-SEC2     | 7/8 Zoll Cellflex     | 1800/2100 MHz    |   1.14 |   23.7 dB   | OPTIMAL (PASS)
+LOC-31-SEC1     | 7/8 Zoll Cellflex     | Multi-Band       |   1.09 |   27.3 dB   | OPTIMAL (PASS)
+LOC-32-SEC1     | 7/8 Zoll Cellflex     | Backbone Richtf. |   1.15 |   23.1 dB   | OPTIMAL (PASS)
+LOC-32-SEC2     | 1/2 Zoll Superflex    | 868 MHz Mesh/BOS |   1.08 |   28.3 dB   | OPTIMAL (PASS)
+--------------------------------------------------------------------------------
+BEFUND & GUETEBEWERTUNG:
+[X] 1. Alle Hauptspeiseleitungen unterschreiten den VSWR-Schwellenwert von 1.20.
+[X] 2. Keine Knickstellen, Mantelbeschädigungen oder Feuchtespuren nachgewiesen.
+[X] 3. 4.3-10 Steckverbinder mit Wera Drehmomentschlüssel auf 5.0 Nm normiert.
+================================================================================
+STATUS: HF-SPEISELEITUNGEN ZU 100% FREIGEGEBEN (PLATZ 1).
+================================================================================
