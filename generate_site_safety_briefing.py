@@ -1,0 +1,64 @@
+import datetime
+
+def generate_safety_briefing():
+    print("================================================================================")
+    print("PROJEKT HAUS IM WIND: B2B-SICHERHEITSUNTERWEISUNG & BAUSTELLENORDNUNG (PHASE 27)")
+    print("================================================================================")
+
+    now = datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S')
+
+    briefing = f"""================================================================================
+B2B-SICHERHEITSUNTERWEISUNG & BAUSTELLENORDNUNG (DGUV V1 / BAUSTELLV)
+LIEGENSCHAFT: HAUS IM WIND | STANDORTBEREICH MOBILFUNK-CLUSTER 2026
+================================================================================
+Stand:             {now}
+Verantwortlich:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Geltungsbereich:   Alle Fremdfirmen, Generalunternehmer und Monteure vor Ort
+
+1. GRUNDREGELN ZUR ARBEITSSICHERHEIT (PSA-PFLICHT)
+--------------------------------------------------------------------------------
+- Auf dem gesamten Baufeld gilt Helmpflicht (DIN EN 397) und S3-Sicherheitsschuhe.
+- Bei Steigarbeiten am Mast ist zertifizierte PSAgA (Auffanggurt nach DIN EN 361)
+  mit fest eingehängtem Steigschutzläufer zwingend vorgeschrieben.
+- Werkzeuge sind gegen Herabfallen durch Fangschnüre zu sichern (Wera / Knipex).
+
+2. VERHALTEN AN ELEKTRISCHEN ANLAGEN & LIFEPO4-USV
+--------------------------------------------------------------------------------
+- Arbeiten an der 400V/63A Hauptverteilung dürfen ausschließlich durch
+  qualifizierte Elektrofachkräfte (EFK) nach DIN VDE 0105-100 erfolgen.
+- Im 288-kWh-LiFePO4-USV-Bereich gilt absolutes Rauch-, Feuer- und Schleifverbot.
+- Batterieklemmen und DC-Sammelschienen dürfen nur mit vollisoliertem Werkzeug
+  (1000 V VDE-geprüft) bedient werden.
+
+3. UMWELT- & BRANDSCHUTZVORSCHRIFTEN
+--------------------------------------------------------------------------------
+- Chemische Baustoffe (z. B. Fischer Mörtelkartuschen, Otto-Chemie Silikone)
+  sind umweltgerecht nach Sicherheitsdatenblatt (SDB) zu entsorgen.
+- Pulver- und CO2-Feuerlöscher befinden sich gut sichtbar im Technikraum.
+- Flucht- und Rettungswege sind zu jedem Zeitpunkt freizuhalten.
+
+4. UNTERWEISUNGSNACHWEIS (FREMDFIRMEN-MONTEURE)
+--------------------------------------------------------------------------------
+Hiermit bestätige ich, die Sicherheitsunterweisung für das Objekt Haus im Wind
+gelesen, verstanden und zur Kenntnis genommen zu haben.
+
+Firma:            ____________________________________________________________
+Name Monteur:     ____________________________________________________________
+Datum:            ____.____.2026   Uhrzeit: ____:____ Uhr
+
+Unterschrift Monteur:                       Unterschrift Kilian Scharf:
+
+________________________________________    ________________________________________
+
+================================================================================
+STATUS: BAUSTELLENORDNUNG SCHLUESSELFERTIG EINSATZBEREIT (PLATZ 1).
+================================================================================
+"""
+    filename = "B2B_SICHERHEITSUNTERWEISUNG_BAUSTELLV.txt"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(briefing)
+    print(f"Sicherheitsunterweisung erfolgreich generiert: {filename}")
+    print(briefing)
+
+if __name__ == '__main__':
+    generate_safety_briefing()

@@ -1,0 +1,25 @@
+================================================================================
+B2B-STATUSNACHFASSUNG & FRISTWAHRUNG (DEUTSCHE FUNKTURM GMBH - DFMG)
+STANDORT-CLUSTER 2026 | VORGANG: DFMG-INCOMING-2026
+================================================================================
+Datum:             02.09.2026 04:53:46
+An:                Deutsche Funkturm GmbH (Standortakquise / Konzerneinkauf)
+Referenz:          DFMG-INCOMING-2026 (Standorte LOC-30, LOC-31, LOC-32)
+Projektleitung:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement Haus im Wind)
+
+Sehr geehrte Damen und Herren,
+
+zur Wahrung der Projektfristen für das Liegenschafts-Cluster 2026 fragen wir den
+Stand der technischen Vorprüfung an.
+
+Die Liegenschaften bieten sofortige Baureife im Außenbereich (§ 35 BauGB), eine
+gesicherte Schwerlastzufahrt, 288-kWh-LiFePO4-USV-Pufferung (BSI-KRITIS) sowie
+vorbereitete Multi-Tenancy-Kapazitäten.
+
+Bitte teilen Sie uns zeitnah das Ergebnis der Suchkreis-Plausibilisierung mit,
+damit die B2B-Gestattungsverträge finalisiert werden können.
+
+Mit freundlichen Grüßen
+Kilian Scharf
+Liegenschafts- und Infrastrukturmanagement Haus im Wind
+================================================================================

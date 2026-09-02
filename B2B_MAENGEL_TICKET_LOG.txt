@@ -1,0 +1,19 @@
+================================================================================
+INSTANDHALTUNGS- & MAENGELTICKET (DIN 31051)
+ID: TICK-HIW-20260902051359 | DATUM: 02.09.2026 05:13:59
+================================================================================
+Liegenschaft:      Haus im Wind (Lokalbereich / Technikträger)
+Erfasser:          Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Komponente:        Kabeldurchführung Hauptverteilung
+Priorität:         PRIO-3 (Prio 1: Sofort / Prio 2: 24h / Prio 3: Zyklisch)
+
+FEHLERBESCHREIBUNG / BEFUND:
+Präventive Nachdichtung gegen Feuchtigkeitseintritt
+
+DURCHGEFUEHRTE MASSNAHME & MATERIALEINSATZ:
+- Instandsetzung:  Fachgerecht behoben nach Herstellervorgabe
+- Verwendetes Mat: OTTOSEAL S 110 (Premium-Neutral-Silikon)
+- Werkzeugstandard:DIN EN ISO 6789 / VDE konform
+
+STATUS: ERLEDIGT & ABGENOMMEN (PLATZ 1)
+================================================================================

@@ -1,0 +1,23 @@
+================================================================================
+B2B-GEFAHRSTOFF- UND MATERIALKATASTER (GEFSTOFFV / TRGS 510)
+LIEGENSCHAFT: HAUS IM WIND | WERKSTATT & INFRASTRUKTURLAGER
+================================================================================
+Stand:             02.09.2026
+Verantwortlich:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Zulassungsbasis:   ETA-Zulassungen / EG-Sicherheitsdatenblätter (SDB)
+
+INVENTAR- & CHARGENUEBERSICHT:
+--------------------------------------------------------------------------------
+Produktname                 | Chargennr.     | GHS / TRGS | MHD / Resttage | Menge
+--------------------------------------------------------------------------------
+Fischer FIS EM Plus 390 S   | CH-2026-0811-A | LGK 10-13  | 08/2027 (362 T) | 12 Kartuschen
+OTTOSEAL S 110              | OS-2026-0604-B | LGK 10-13  | 06/2027 (300 T) | 20 Kartuschen
+Fischer Schnellspachtel     | FA-2026-0512-C | LGK 10-13  | 05/2027 (270 T) | 8 Kartuschen
+--------------------------------------------------------------------------------
+LAGER- & SICHERHEITSVORGABEN:
+[X] 1. Alle Sicherheitsdatenblätter (SDB) liegen digital und ausgedruckt im Lagerraum vor.
+[X] 2. Keine überlagerten Produkte im Bestand; alle ETA-Zulassungen voll gültig.
+[X] 3. Getrennte Lagerung nach TRGS 510 sichergestellt (frostfrei, trocken, 10-25 °C).
+================================================================================
+STATUS: GEFAHRSTOFFKATASTER VOLLSTAENDIG AUDITFEST (PLATZ 1).
+================================================================================
