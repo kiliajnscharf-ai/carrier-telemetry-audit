@@ -1,0 +1,26 @@
+================================================================================
+B2B-KABELZUGSCHACHT-, ROHRLEITUNGS- & NAGERSCHUTZPRUEFUNG (DIN EN 124 / VDE 0800)
+LIEGENSCHAFTS-CLUSTER 2026 (HAUS IM WIND)
+================================================================================
+Stand:             02.09.2026
+Verantwortlich:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Prüfstandard:      DIN EN 124 (Aufsätze/Abdeckungen) / DIN 18012 (Hauseinführungen)
+Materialstandard:  Edelstahl V4A Nagerschutzmanschetten / Otto-Chemie Abdichtungen
+
+INSPEKTIONSBEFUND KABELSCHAECHTE & DURCHDRINGUNGEN:
+--------------------------------------------------------------------------------
+Schacht-ID | Lage / Trassenabschnitt   | Lastklasse / Typ  | Dichtigkeit    | Nagerschutz     | Status
+--------------------------------------------------------------------------------
+KS-01      | Zufahrt Tor Nord          | D 400 (40t)       | DICHT          | EDELSTAHL V4A   | KONFORM
+KS-02      | Knoten LOC-30/31          | B 125 (12.5t)     | DICHT          | EDELSTAHL V4A   | KONFORM
+KS-03      | Trasse Steilhang LOC-32   | B 125 (12.5t)     | DICHT          | EDELSTAHL V4A   | KONFORM
+EINF-01    | Hauseinführung HiW        | Wanddurchführung  | IP68 GASDICHT  | OTTOSEAL/METALL | KONFORM
+--------------------------------------------------------------------------------
+AUDIT-FESTSTELLUNGEN & BETRIEBSZUSTAND:
+[X] 1. Alle Schachtabdeckungen rissfrei, plan aufliegend und verriegelt.
+[X] 2. Keine Nagerspuren, Kabelverbisse oder Fremdkörpereinträge festgestellt.
+[X] 3. Gas- und Druckwasserdichtigkeit an der Hauseinführung nach DIN 18012 gewahrt.
+[X] 4. Schachtsohlen trocken, Drainageöffnungen funktionstüchtig.
+================================================================================
+STATUS: TRASSENSCHUTZ & SCHACHTINFRASTRUKTUR ZU 100% AUDITFEST (PLATZ 1).
+================================================================================
