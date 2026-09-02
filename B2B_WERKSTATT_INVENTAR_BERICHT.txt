@@ -1,0 +1,26 @@
+================================================================================
+PROJEKT HAUS IM WIND: B2B-WERKSTATT- & MATERIAL-INVENTAR (PHASE 65)
+Erstellungsdatum:  02.09.2026 06:23:39
+Liegenschaft:      Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
+Verantwortung:     Autarker Instandhaltungsbetrieb (Tier-1)
+Qualitaetsstandard:Ausschliesslich Premium-Produkte (Wera, Knipex, Fischer, Otto)
+================================================================================
+
+Art-ID    | Hersteller   | Bezeichnung                          | Menge          | Lagerort               | Status
+-------------------------------------------------------------------------------------------------------------------
+MAT-001   | Fischer      | FIS EM Plus Injektionsmoertel 390ml  | 4 Kartuschen   | Schaltschrank-Depot LOC-30 | NEU / VERSIEGELT
+MAT-002   | Fischer      | FH II 18/25 S Schwerlastanker        | 24 Stueck      | Magazin Kasten A1      | OPTIMAL
+WRK-001   | Wera         | Kraftform VDE Schraubendrehersatz    | 1 Satz (14-tlg) | Werkstattkoffer 1      | GEPRUEFT (1000V)
+WRK-002   | Wera         | Click-Torque C3 Drehmomentschluessel | 1 Stueck       | Praezisions-Koffer     | KALIBRIERT
+WRK-003   | Knipex       | Elektro-Installationszange VDE       | 1 Stueck       | Werkstattkoffer 1      | OPTIMAL
+WRK-004   | Knipex       | Cobra Rohrzange 250mm                | 1 Stueck       | Werkstattkoffer 2      | OPTIMAL
+MAT-003   | Otto-Chemie  | OTTOSEAL S100 Premiumsilikon         | 6 Kartuschen   | Klimaraum Magazin      | NEU / VERSIEGELT
+-------------------------------------------------------------------------------------------------------------------
+
+AUDIT-FESTSTELLUNG:
+[X] 1. Mindestbestaende fuer Notfallinstandsetzungen (DIN 31051) vollstaendig vorhanden.
+[X] 2. Keine abgelaufenen chemischen Produkte (Verbundmoertel / Silikondichtstoffe).
+[X] 3. Werkzeuge gemaess DGUV V3 und ISO 6789 kalibriert und unbeschaedigt.
+================================================================================
+STATUS: WERKSTATT-INVENTAR ZU 100% VERIFIZIERT (PLATZ 1).
+================================================================================
