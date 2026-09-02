@@ -1,6 +1,6 @@
 ================================================================================
 BSI-KRITIS USV-BATTERIE- & RESILIENZ-AUDIT (KORRIGIERT & AUDITIERT)
-Zeitstempel:       02.09.2026 05:26:18
+Zeitstempel:       02.09.2026 05:45:16
 Zellentechnologie: LiFePO4 (Lithium-Eisenphosphat, prismatisch)
 Vorgabestandard:   BSI-KRITIS (>= 72 Stunden Autarkie bei Volllast)
 ================================================================================
