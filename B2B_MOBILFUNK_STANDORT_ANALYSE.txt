@@ -1,0 +1,36 @@
+================================================================================
+PROJEKT HAUS IM WIND: MOBILFUNKMAST-STANDORTANALYSE (PHASE 94)
+Prüfzeitpunkt:     02.09.2026 08:49:28
+Zielregion:        Bad Pyrmont, Lügde und Umgebung (Weserbergland)
+================================================================================
+IDENTIFIZIERTE POTENZIALFLÄCHEN FÜR NEUBAU-MASTEN (SITING):
+
+Standort-ID:       SITE-BAD-01
+Bezeichnung:       Bad Pyrmont Süd (Hanglage / Kurpark-Rand)
+Baustruktur:       Monopole / Dachstandort
+Infrastruktur:     Erhöhte Position, Schließung von LTE/5G-Dämpfung im Talkessel
+Markteinschätzung: Telekom / Vodafone
+Bewertung:         GEPRÜFT / EMPFOHLEN
+--------------------------------------------------------------------------------
+Standort-ID:       SITE-BAD-02
+Bezeichnung:       Gewerbegebiet Holzhausen (Lügder Str.)
+Baustruktur:       Gittermast (Freifläche)
+Infrastruktur:     Gute Zufahrt, Starkstrom- und Glasfasernähe vorhanden
+Markteinschätzung: Vantage Towers / Deutsche Telekom
+Bewertung:         IDEALER STANDORT
+--------------------------------------------------------------------------------
+Standort-ID:       SITE-BAD-03
+Bezeichnung:       Emmertal-Grenze (Kahlberg-Ausläufer)
+Baustruktur:       Maststandort / Richtfunkkante
+Infrastruktur:     Entlastung der Bundesstraße B83, Beseitigung von White Spots
+Markteinschätzung: Telefónica / O2
+Bewertung:         POTENZIALFLÄCHE
+--------------------------------------------------------------------------------
+
+================================================================================
+EMPFEHLUNG FÜR VERMIETER- EINREICHUNGEN:
+[X] Nutzung von Online-Vermieterportalen (Vantage Towers, Deutsche Telekom Towers).
+[X] Einreichung von Flurstücksdaten und Eigentümernachweisen.
+================================================================================
+STATUS: MOBILFUNK-STANDORTANALYSE ERFOLGREICH DURCHGEFÜHRT (PLATZ 1).
+================================================================================
