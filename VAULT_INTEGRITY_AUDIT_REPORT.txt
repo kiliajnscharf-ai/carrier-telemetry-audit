@@ -1,28 +1,29 @@
 ================================================================================
 PROJEKT HAUS IM WIND: FIPS-180-4 VAULT-INTEGRITAETS-AUDIT (GEHAERTET)
-Prüfzeitpunkt:     02.09.2026 06:51:02
+Prüfzeitpunkt:     02.09.2026 06:52:16
 Liegenschaft:      Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
 Integritaetsnorm:  FIPS 180-4 / Git Tree SHA Integrity (Exklusive Meta-Hashes)
 ================================================================================
 
 1. REPOSITORY-ZUSTAND:
-Git-Status:        BEREINIGT (WORKING TREE CLEAN)
+Git-Status:        UNCOMMITTED CHANGES (1 Dateien)
 
 2. MASTER-RELEASE-TARBALL INTEGRITAET:
 Archivdatei:       Projekt_Haus_im_Wind_Master_Release_2026.tar.gz
-Soll-Hash:         20e7b8c920eda40dd8fc28c723930e2cf1335a721f2e1ffda0a8d2cf3874bb5e
-Ist-Hash:          20e7b8c920eda40dd8fc28c723930e2cf1335a721f2e1ffda0a8d2cf3874bb5e
+Soll-Hash:         1826e2c66f8580cba1a859907bdfa729766bc55504287f257e3e63f8dd85b1df
+Ist-Hash:          1826e2c66f8580cba1a859907bdfa729766bc55504287f257e3e63f8dd85b1df
 Status:            BITIDENTISCH (100% OK)
 
 3. MASTER-HASHKATALOG DETAILVERIFIKATION:
-Katalog-Eintraege: 271 Quelldateien geprueft (Meta-Hashes exkludiert)
-Uebereinstimmung:  271 / 271 (100.0%)
-Befund:            0 Bitfehler detektiert.
+Katalog-Eintraege: 272 Quelldateien geprueft (Meta-Hashes exkludiert)
+Uebereinstimmung:  271 / 272 (99.6%)
+Abweichungen:
+  - MODIFIZIERT: facility_control_center.sh
 
 ================================================================================
 GESAMT-AUDIT-FESTSTELLUNG:
-[X] 100% kryptografische Unversehrtheit des Repositories.
-[X] FIPS-180-4 Kette nahtlos geschlossen.
+[ ] 100% kryptografische Unversehrtheit des Repositories.
+[ ] FIPS-180-4 Kette nahtlos geschlossen.
 ================================================================================
-STATUS: VAULT-INTEGRITAET ZU 100% VERIFIZIERT (PLATZ 1).
+STATUS: INTEGRITAETS-WARNUNG.
 ================================================================================

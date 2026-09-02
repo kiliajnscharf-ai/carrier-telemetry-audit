@@ -16,7 +16,7 @@ show_menu() {
     echo "4) Netzwerk-Latenz- & RFC-2681 Jitter-Analyse"
     echo "5) System-Health & Dienst-Ports ueberpruefen"
     echo "6) Dienste neustarten / Autostart synchronisieren"
-    echo "7) Revisionspruefung (FIPS-180-4 SHA-256 & Git-Status)"
+    echo "7) FIPS-180-4 Vault-Integritaets-Audit (Gehaertete 100%-Pruefung)"
     echo "0) Beenden"
     echo "================================================================================"
 }
@@ -42,10 +42,7 @@ execute_option() {
             ./autostart_facility_services.sh
             ;;
         7)
-            echo "--- GIT REPOSITORY STATUS ---"
-            git status
-            echo "--- FIPS-180-4 SHA-256 KONSOLIDIERTER REPORT ---"
-            sha256sum MASTER_B2B_FACILITY_AUDIT_REPORT.txt
+            python3 verify_vault_integrity.py
             ;;
         0)
             echo "Kontrollzentrum beendet."
@@ -57,15 +54,13 @@ execute_option() {
     esac
 }
 
-# Batch-Modus für automatisierte Verifikation
 if [ "$1" != "" ]; then
     show_menu
-    echo "[TEST] Führe Test-Option aus: $1"
+    echo "[TEST] Fuehre Menue-Option aus: $1"
     execute_option "$1"
     exit 0
 fi
 
-# Interaktiver Modus
 while true; do
     show_menu
     read -rp "Bitte Option waehlen [0-7]: " OPTION
