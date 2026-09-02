@@ -1,6 +1,6 @@
 ================================================================================
 B2B-FACILITY-MANAGEMENT PRUEFPROTOKOLL (DIN 31051 / DGUV V3)
-Erstellungsdatum:  02.09.2026 06:14:09
+Erstellungsdatum:  02.09.2026 06:27:49
 Objektstandort:    Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
 Pruefverantwortung: Technischer Liegenschaftsbetrieb (Tier-1)
 ================================================================================

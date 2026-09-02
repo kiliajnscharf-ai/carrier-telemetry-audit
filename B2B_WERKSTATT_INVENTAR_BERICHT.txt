@@ -1,6 +1,6 @@
 ================================================================================
 PROJEKT HAUS IM WIND: B2B-WERKSTATT- & MATERIAL-INVENTAR (PHASE 65)
-Erstellungsdatum:  02.09.2026 06:23:39
+Erstellungsdatum:  02.09.2026 06:27:50
 Liegenschaft:      Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
 Verantwortung:     Autarker Instandhaltungsbetrieb (Tier-1)
 Qualitaetsstandard:Ausschliesslich Premium-Produkte (Wera, Knipex, Fischer, Otto)
