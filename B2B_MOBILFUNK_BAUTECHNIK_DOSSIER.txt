@@ -1,0 +1,34 @@
+================================================================================
+PROJEKT HAUS IM WIND: MOBILFUNK-BAUTECHNIK & FLURSTÜCKS-DOSSIER (PHASE 95)
+Prüfzeitpunkt:     02.09.2026 08:51:47
+Liegenschaft:      Bad Pyrmont & Region Weserbergland
+Infrastruktur-Zweck: Bauliche Platzierung & Erschließung von Neubau-Masten
+================================================================================
+1. BAULICHE PLATZIERUNG UND MASTEN-TYPOLOGIE:
+
+--- STANDORT 1: SITE-BAD-01 (Bad Pyrmont Süd / Kurpark-Rand) ---
+- Exakter Bauplatz: Hanganschnitt im südlichen Kurpark-Übergang (geschützte Topografie).
+- Baustruktur: Monopole (schlanker Stahlrohrmast, h=30m) oder Tarnmast in Antennendesign.
+- Fundamentierung: Flachfundament oder Mikro-Pfahlgründung bei Hangdruck.
+- Anbindung: Zufahrt über bestehende Wirtschaftswege, Strom/Glasfaser direkt im Nahbereich.
+
+--- STANDORT 2: SITE-BAD-02 (Gewerbegebiet Holzhausen / Lügder Str.) ---
+- Exakter Bauplatz: Unbebaute Randfläche im Gewerbegebiet Holzhausen.
+- Baustruktur: Klassischer Freiflächen-Gittermast (h=40m) für Mehrfach-Colocation (Multi-Operator).
+- Fundamentierung: Genormtes Schwerkraft-Plattenfundament.
+- Anbindung: Perfekte Erschließung durch LKW-befahrbare Zufahrt, Starkstrom und Haupt-Glasfasertrasse.
+
+--- STANDORT 3: SITE-BAD-03 (Emmertal-Grenze / Kahlberg-Ausläufer) ---
+- Exakter Bauplatz: Exponierte Kante am Kahlberg-Ausläufer (Richtfunk- und Sendeachse).
+- Baustruktur: Robuster Gittermast (h=35m) mit wetterfester Ausrüstung gegen Windlasten.
+- Fundamentierung: Fels-Fangsicherungs- und Betonanker.
+- Anbindung: Erschließung über Forst- und Bundesstraßenzufahrt (B83), Richtfunk-Backup möglich.
+
+================================================================================
+BAUTECHNISCHE STANDARDS & NORMEN:
+[X] Standsicherheit nach DIN EN 1991 (Eurocode 1) & DIN EN 1993 (Stahlbau).
+[X] Elektromagnetische Verträglichkeit (EMV) & BEMF-Standortbescheinigung (BNetzA).
+[X] Blitzschutz nach DIN EN 62305 & Erdungsanlage nach VDE 0100.
+================================================================================
+STATUS: BAUTECHNISCHES DOSSIER VOLLSTAENDIG ERSTELLT (PLATZ 1).
+================================================================================
