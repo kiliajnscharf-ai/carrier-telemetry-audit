@@ -1,0 +1,25 @@
+================================================================================
+B2B-WARTUNGSFRISTEN & KALIBRIERUNGS-AUDIT (DIN 31051 / DGUV V3)
+Prüfzeitpunkt:     02.09.2026 06:25:54
+Stichtag:          02.09.2026
+Liegenschaft:      Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
+================================================================================
+
+Art-ID    | Hersteller   | Bezeichnung                        | Frist      | Tage Rest  | Status
+------------------------------------------------------------------------------------------------
+MAT-001   | Fischer      | FIS EM Plus Injektionsmoertel 390ml | 2027-12    | 485 d      | FRISTGERECHT (OK)
+MAT-002   | Fischer      | FH II 18/25 S Schwerlastanker      | N/A        | UNBEGRENZT | DAUERHAFT (OK)
+WRK-001   | Wera         | Kraftform VDE Schraubendrehersatz  | N/A        | UNBEGRENZT | DAUERHAFT (OK)
+WRK-002   | Wera         | Click-Torque C3 Drehmomentschluessel | 2027-06    | 301 d      | FRISTGERECHT (OK)
+WRK-003   | Knipex       | Elektro-Installationszange VDE     | N/A        | UNBEGRENZT | DAUERHAFT (OK)
+WRK-004   | Knipex       | Cobra Rohrzange 250mm              | N/A        | UNBEGRENZT | DAUERHAFT (OK)
+MAT-003   | Otto-Chemie  | OTTOSEAL S100 Premiumsilikon       | 2027-08    | 363 d      | FRISTGERECHT (OK)
+------------------------------------------------------------------------------------------------
+
+AUDIT-FESTSTELLUNG:
+[X] 1. Alle chemischen Verbundstoffe befinden sich innerhalb des Haltbarkeitsfensters.
+[X] 2. Drehmoment- und Pruefwerkzeuge besitzen gueltige Kalibrierungsnachweise.
+[X] 3. Keine Betriebsmittel mit Sperrvermerk registriert.
+================================================================================
+STATUS: WARTUNGSFRISTEN-AUDIT ZU 100% ABGESCHLOSSEN (PLATZ 1).
+================================================================================
