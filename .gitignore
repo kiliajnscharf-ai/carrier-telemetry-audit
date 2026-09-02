@@ -61,3 +61,6 @@ www.spacex.com/
 HausImWind/
 Premium_Upgrade_Auto/
 Speedtest_monitor/
+*.sha256
+*.zip.*
+Speedtest_monitor
