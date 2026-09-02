@@ -1,0 +1,37 @@
+================================================================================
+PROJEKT HAUS IM WIND: VERSAND- & PORTAL-VORBEREITUNG (PHASE 97)
+Erstellungszeitpunkt: 02.09.2026 08:54:38
+Objekt:             Grundstücksangebot Mobilfunk-Neubau (SITE-BAD-01 bis 03)
+================================================================================
+E-MAIL-VORLAGE FÜR DEN DIREKTVERSAND AN NETZBETREIBER / FUNKTURMGESELLSCHAFTEN:
+
+BETREFF: Grundstücksangebot für Mobilfunk-Neubau / Siting-Potentiale Region Bad Pyrmont (SITE-BAD-01 bis SITE-BAD-03)
+
+Sehr geehrte Damen und Herren,
+
+bezugnehmend auf unser anliegendes Vermieterdossier bieten wir Ihnen hiermit drei bautechnisch
+vorbereitete Liegenschaften zur Schließung von Funkabdeckungslücken in Bad Pyrmont und Umgebung an:
+
+- SITE-BAD-01: Bad Pyrmont Süd (Hanglage / Kurpark-Rand, Monopole h=30m)
+- SITE-BAD-02: Gewerbegebiet Holzhausen (Lügder Str., Freiflächen-Gittermast h=40m)
+- SITE-BAD-03: Emmertal-Grenze (Kahlberg-Ausläufer, Richtfunk-Gittermast h=35m)
+
+Sämtliche Standorte verfügen über gesicherte Erschließung (Starkstrom, Glasfaser, Zufahrt)
+und erfüllen alle bautechnischen Normen (DIN EN 1991/1993, BNetzA).
+
+Die detaillierten Bautechnik-Dossiers und Flurstücksübersichten finden Sie im Anhang.
+Wir bitten um Prüfung und Aufnahme in Ihre aktuelle Ausbauplanung 2026/2027.
+
+Mit freundlichen Grüßen
+Facility Management 'Haus im Wind'
+Standort: Bad Pyrmont (LOC-30 bis LOC-32)
+Tier-1 Autarkie (Platz 1)
+
+================================================================================
+ERFORDERLICHE DATEIANHÄNGE FÜR DEN VERSAND:
+1. B2B_MOBILFUNK_VERMIETER_ANGEBOT.txt
+2. B2B_MOBILFUNK_BAUTECHNIK_DOSSIER.txt
+3. Flurstückskarte / Liegenschaftskataster (Flur 1:1000)
+================================================================================
+STATUS: VERSANDPAKET VOLLSTÄNDIG VORBEREITET (PLATZ 1).
+================================================================================
