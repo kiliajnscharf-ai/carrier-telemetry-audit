@@ -1,0 +1,68 @@
+import datetime
+
+def generate_construction_spec():
+    print("================================================================================")
+    print("PROJEKT HAUS IM WIND: WERKSTATT-, MONTAGE- & WERKZEUGPLANUNG (TIER-1 / PLATZ 1)")
+    print("================================================================================")
+
+    content = f"""================================================================================
+BAUTECHNISCHE AUSFUEHRUNGS- UND WERKZEUGSPEZIFIKATION
+STANDORT-CLUSTER 2026 (LOC-30, LOC-31, LOC-32)
+================================================================================
+Datum:             {datetime.datetime.now().strftime('%d.%m.%Y %H:%M:%S')}
+Projektleitung:    Kilian Scharf (Autarke Liegenschaftsinstandhaltung Haus im Wind)
+Qualitätsnormen:   DIN EN 50383, DIN EN 62305, DIN VDE 0100, DIN EN ISO 6789
+
+1. SCHWERLAST-VERANKERUNG & STATIK (HERSTELLER: FISCHER)
+--------------------------------------------------------------------------------
+- Primäranker Mastfuß:       Fischer Verbundmörtel FIS EM Plus 390 S (ETA Option 1)
+- Ankerstangen:              Fischer FIS A M24 x 300 mm (Edelstahl A4-70)
+- Setztiefe:                 240 mm in gerissenem Normalbeton (C25/30)
+- Charakteristische Zuglast: 68.4 kN pro Verankerungspunkt
+- Korrosionsschutzklasse:    C4 (Industrie- und Meeresklima-resistent)
+
+2. SCHRAUB- UND DREHMOMENTWERKZEUGE (HERSTELLER: WERA)
+--------------------------------------------------------------------------------
+- Hauptverschraubung Mast:   Wera Click-Torque D 6 (60 - 300 Nm, 3/4" Vierkant)
+  * Solldrehmoment M24 (8.8): 245 Nm (+/- 3 % Toleranz nach ISO 6789)
+- Modulmontage & Antennen:   Wera Click-Torque C 3 (40 - 200 Nm, 1/2" Vierkant)
+  * Solldrehmoment M16 (8.8): 120 Nm
+- Systemtechnik & Schränke:  Wera Kraftform Kompakt VDE 16 extra slim (1.000 V)
+  * Solldrehmoment Klemmen:  2.8 Nm bis 5.5 Nm kalibriert
+
+3. ELEKTROINSTALLATION, BLITZSCHUTZ & CRIMPUNG (HERSTELLER: KNIPEX)
+--------------------------------------------------------------------------------
+- Kabelverpressung DC & USV: Knipex 97 52 65 Vierkant-Crimpzange (10 - 95 mm²)
+  * Pressform: Hexagonal / DIN EN 61238-1 gasdicht
+- Potentialausgleich:        Knipex 97 53 14 Selbsteinstellende Crimpzange
+  * 50 mm² Kupfer-Rundleiter an Blitzschutz-Haupterder
+- Trennwerkzeuge:            Knipex BiX Rohrschneider & Knipex Kabelscheren mit
+                             Doppelschneide (95 16 200, 1.000 V geprüft)
+
+4. CHEMISCHE GEBAEUDEABDICHTUNG & ISOLIERUNG (HERSTELLER: OTTO-CHEMIE)
+--------------------------------------------------------------------------------
+- Dachdurchführungen (HF):   OTTOSEAL S 110 (Premium-Neutral-Silikon)
+  * Eigenschaften: 100 % UV-, alterungs- und witterungsbeständig, MEKO-frei
+- Schaltschrank-Sockel:      OTTOSEAL S 70 (Naturstein- und Schwerlastsilikon)
+  * Funktion: Absoluter Feuchtigkeitsschutz, fungizid ausgerüstet
+- Brandabschottung Leitungen:OTTO Firestop Silikon (Feuerwiderstandsklasse EI 120)
+
+5. AUTARKE 72H-USV-INSTALLATION (BSI-KRITIS & NIS-2 COMPLIANCE)
+--------------------------------------------------------------------------------
+- Speicherkapazität:         288 kWh LiFePO4 pro Standort (48V / 6000 Ah System)
+- DC-Sammelschienen:         Verzinnte Kupferschienen 80 x 10 mm (max. 1.600 A)
+- Absicherung:               Bussmann NH00 / NH1 Hochleistungs-Schmelzsicherungen
+- Notstrom-Umschaltung:      Allpolige Netztrennung (< 20 ms Umschaltzeit)
+
+================================================================================
+STATUS: AUSFUEHRUNGSPLAN VOLLSTAENDIG DEFINIERT (WERKSTATT-BEREITSCHAFT PLATZ 1)
+================================================================================
+"""
+    filename = "B2B_MONTAGE_UND_WERKZEUG_SPEC.txt"
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"Spezifikation erfolgreich generiert: {filename}")
+    print(content)
+
+if __name__ == '__main__':
+    generate_construction_spec()

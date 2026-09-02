@@ -1,0 +1,23 @@
+#!/bin/bash
+# =================================================================
+# PROJEKT: HAUS IM WIND - MANUAL NETWORK TARGETING V3.1
+# FIX: MANUELLE IP-ADRESSIERUNG FÜR USERLAND-UMGEBUNGEN
+# =================================================================
+
+echo "STARTE MANUELLE GERÄTE-ANALYSE..."
+
+# DEFINITION DES ZIELS (PASSEN SIE DIE IP AN IHR NETZWERK AN, Z.B. 192.168.178.0/24)
+# INFORMATION: TYPISCH FÜR FRITZBOX IST 192.168.178.0/24
+# TYPISCH FÜR ANDERE ROUTER IST 192.168.1.0/24
+TARGET="192.168.1.0/24"
+
+echo "SCANNE MANUELL DEFINIERTES SEGMENT: $TARGET"
+echo "---------------------------------------------------------------"
+
+# NMAP OHNE OS-DETECTION (-O), DA USERLAND DIES OFT BLOCKIERT
+# -sP: SCHNELLER PING-SCAN ZUR IDENTIFIKATION AKTIVER GERÄTE
+nmap -sP $TARGET
+
+echo "---------------------------------------------------------------"
+echo "FALLBACK-DIAGNOSE ABGESCHLOSSEN."
+echo "LOGIK-PFAD: BEI NULL TREFFERN MUSS DIE IP-RANGE GEPRÜFT WERDEN."

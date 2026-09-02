@@ -1,0 +1,25 @@
+================================================================================
+BEWERBUNGSDOSSIER: AKKREDITIERUNG ALS B2B-STANDORTAKQUISITEUR / PARTNER
+================================================================================
+Anbieter:          Kilian Scharf (Liegenschafts- & Infrastrukturmanagement)
+Kontakt:           kiliajnscharf@gmail.com
+Spezialisierung:   Automatisierte Standortvorqualifizierung, BNetzA STOB XML,
+                   ITU-R P.525/P.526 HF-Planung, DIN EN 50383 BEMFV-Berechnung
+
+LEISTUNGSPROFIL FUER TOWERCOS UND GENERALUNTERNEHMEN:
+1. Schnelle Bearbeitung zugewiesener Suchkreise mit deterministischer Geodaten-Pipeline.
+2. Vollstaendige B2B-Dossiers inklusive baurechtlicher und funkphysikalischer Vorpruefung.
+3. Strukturierte Eigentuemerermittlung und Verhandlung von Gestattungsvertraegen.
+4. Einhaltung aller BSI-KRITIS und NIS-2 Resilienzstandards (72h USV LiFePO4).
+
+REFERENZOBJEKTE (CLUSTER 2026):
+- LOC-30 (Westflanke Forsthaus) - P1 Vorqualifiziert
+- LOC-31 (Talstation Sued)      - P1 Vorqualifiziert
+- LOC-32 (Bergkuppe Nordost)    - P1 Vorqualifiziert
+- Master-Hash (SHA-256): 819d2d9a23a4b5537c2f45f4f91dd65e9d54ebed8a44137b22dd90a6df959355
+
+KONTAKTKANAELE ZUM KONZERNEINKAUF:
+- Deutsche Funkturm GmbH: Einkauf / Partnerbetreuung (www.dfmg.de/generalunternehmen)
+- Vantage Towers AG:      Vendor Management (landlords.germany@vantagetowers.com)
+- Generalunternehmer:     Axians, Circet, SPIE Liegenschaftsakquise
+================================================================================

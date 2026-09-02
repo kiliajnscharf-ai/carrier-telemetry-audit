@@ -1,0 +1,18 @@
+================================================================================
+B2B-BESCHAFFUNGS- UND STUECKLISTEN-DOSSIER (PROJEKT HAUS IM WIND)
+================================================================================
+Datum:             02.09.2026 04:10:31
+Projektstandard:   Tier-1 Global Reference Architecture (Platz 1)
+Ziel-Cluster:      LOC-30, LOC-31, LOC-32
+
+KERNKOMPONENTEN & INVESTITION:
+- Fischer Befestigungstechnik (Mörtelextrakt & A4-Ankerstangen):  2.890,80 EUR
+- Wera Drehmoment- & VDE-Präzisionswerkzeuge:                    1.345,00 EUR
+- Knipex Crimp-, Schneid- und Installationswerkzeuge:            1.085,60 EUR
+- Otto-Chemie Hochleistungs- und Brandschutz-Dichtstoffe:        985,80 EUR
+- 72h-LiFePO4-Hochleistungs-USV-Einheiten (288 kWh x 3):        43.500,00 EUR
+--------------------------------------------------------------------------------
+BESCHAFFUNGSVOLUMEN GESAMT (NETTO):                            49.807,20 EUR
+================================================================================
+STATUS: STUECKLISTE BEREIT ZUR BESTELLUNG BEI ZUGELASSENEN FACHHAENDLERN.
+================================================================================

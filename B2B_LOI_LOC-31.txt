@@ -1,0 +1,56 @@
+================================================================================
+LETTER OF INTENT (LOI) & GESTATTUNGS-VORVERTRAG
+ZUR ERRICHTUNG EINER MOBILFUNK-SENDESTELLE (CLUSTER 2026)
+================================================================================
+Standort-ID:       LOC-31
+Bezeichnung:       Talstation Süd
+Datum:             02.09.2026
+Rechtsrahmen:      Bürgerliches Gesetzbuch (BGB) §§ 535 ff., 1090
+
+ZWISCHEN:
+1. Liegenschaftseigentümer / Verfügungsberechtigter (nachfolgend "Eigentümer")
+   und
+2. Kilian Scharf (Liegenschafts- und Infrastrukturmanagement, nachfolgend "Akquisiteur")
+
+PRÄAMBEL:
+Der Akquisiteur projektiert auf dem Grundstück des Eigentümers eine Mobilfunk-Infrastruktur-
+anlage zur Schließung regionaler Versorgungslücken und zur Bereitstellung von 5G-/6G-Diensten
+im Auftrag bzw. zur Übergabe an lizenzierte Betreiber (Vantage Towers AG, Deutsche Funkturm GmbH,
+Telekom, Vodafone, Telefónica, 1&1).
+
+ 1 VERTRAGSGEGENSTAND & FLÄCHENNUTZUNG
+1. Der Eigentümer gestattet dem Akquisiteur sowie den beauftragten Betreibern die Nutzung einer
+   Teilfläche von ca. 150 m² (gemäß Lageplan) zur Errichtung eines Schleuderbeton-/Gitter-
+   mastes, Aufstellung von Systemtechnik-Schränken sowie einer BSI-KRITIS-konformen 72h-USV-Anlage.
+2. Der Eigentümer gewährt ein jederzeitiges, ungehindertes Zugangs- und Zufahrtsrecht (24/7/365)
+   für Wartungs- und Notfalleinsätze über die bestehenden Wege.
+
+ 2 EXKLUSIVITÄT & PRÜFZEITRAUM
+1. Der Eigentümer räumt dem Akquisiteur ein ausschließliches, unwiderrufliches Nutzungs- und
+   Prüfrecht für die Dauer von 24 Monaten ab Unterzeichnung dieses LOI ein.
+2. Während dieser Frist wird der Eigentümer keine Verhandlungen mit Dritten über Mobilfunk-
+   anlagen auf dem genannten Grundstück führen.
+
+ 3 KONDITIONEN DES HAUPTMIETVERTRAGES
+1. Nach erfolgreicher Genehmigungs- und Netzprüfung wird ein Hauptmietvertrag über eine
+   Festlaufzeit von 20 Jahren (mit 4 x 5 Jahren automatischer Verlängerungsoption) geschlossen.
+2. Die Grundpacht beträgt 1350.00 EUR / Monat (wertgesichert gemäß Verbraucherpreisindex).
+3. Für jeden weiteren aufgeschalteten Betreiber (Multi-Tenancy / Co-Location) wird ein
+   Zusatzzuschlag von 375,00 EUR / Monat gewährt.
+
+ 4 DINGLICHE ABSICHERUNG
+Der Eigentümer verpflichtet sich, zur Sicherung der Anlage im Grundbuch an nächstbereiter Stelle
+eine beschränkte persönliche Dienstbarkeit (§ 1090 BGB) zugunsten des Betreibers eintragen zu lassen.
+
+ 5 BEMFV & REGULATORISCHE BESTIMMUNGEN
+Die Anlage wird unter strikter Einhaltung der 26. BImSchV sowie der DIN EN 50383 projektiert.
+Eine gültige Standortbescheinigung (STOB) der Bundesnetzagentur ist zwingende Voraussetzung
+für die Inbetriebnahme.
+
+================================================================================
+Ort, Datum: _______________________      Ort, Datum: Bad Pyrmont, 02.09.2026
+
+
+___________________________________      ___________________________________
+Unterschrift Eigentümer                  Unterschrift Kilian Scharf
+================================================================================

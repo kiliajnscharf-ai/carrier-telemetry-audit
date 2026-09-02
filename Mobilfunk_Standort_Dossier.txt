@@ -1,0 +1,27 @@
+================================================================================
+STANDORT-DOSSIER FUER MOBILFUNK-INFRASTRUKTUR (P1)
+================================================================================
+
+1. STANDORTDATEN:
+- Bezeichnung:        Mobilfunkstandort 51.9850_9.2550
+- Geokoordinaten:     51.985000 N, 9.255000 E (WGS84)
+- Topografie / Hoehe: 250 m ue. NN (Exponierte Huegellage)
+- Gelaendeart:        Freiflaeche am Wirtschaftsweg
+- Erschliessung:      Stromtrasse in 30 m Entfernung vorhanden
+- Zuwegung:           Wirtschaftsweg fuer Montagefahrzeuge geeignet
+
+2. FUNKTECHNISCHE BEWERTUNG:
+- Gesamt-Score:       9.13 / 10 (Prioritaetsstufe: P1)
+- Empfohlene Baender: Band 28 (700 MHz), Band 20 (800 MHz), Band 8 (900 MHz)
+- Versorgungsradius:  ca. 5 - 8 km zur Schliessung lokaler Funkloecher
+
+3. VERSORGUNGSSITUATION VOR ORT:
+- Vodafone:           RSRP < -115 dBm (Strukturelles Funkloch)
+- O2 Telefonica:      RSRP < -115 dBm (Strukturelles Funkloch)
+- 1&1 Mobilfunk:      No Service (Keine Netzabdeckung)
+- Deutsche Telekom:   RSRP -105 to -115 dBm (Kritische Randversorgung)
+
+4. BEWERTUNG FUER TOWERCOS:
+Der Standort bietet maximale Flaechenwirkung bei minimalen Erschliessungskosten.
+Geeignet fuer standardisierte Schleuderbeton- oder Gittermasten (30-40 m).
+================================================================================

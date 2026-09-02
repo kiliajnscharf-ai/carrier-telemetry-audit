@@ -1,0 +1,9 @@
+================================================================================
+STATUSNOTIZ: ROLLENDEFINITION & PROZESSSTAND CLUSTER 2026
+================================================================================
+Rolle:             Unabhaengiger Standortanbieter / Liegenschafts-Scout
+Rechtsform:        Eigenstaendige Vorqualifizierung und Einreichung
+Vertragsstatus:    Unverbindliche Vorpruefungsphase (Tickets: LLSM0135511, DFMG-INCOMING-2026)
+Verguetungsbasis:  Erfolgsabhaengig nach Abschluss von Standortsicherungs-/Pachtvertraegen
+Fristende:         15.09.2026
+================================================================================

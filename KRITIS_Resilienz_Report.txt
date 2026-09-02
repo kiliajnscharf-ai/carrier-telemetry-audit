@@ -1,0 +1,31 @@
+================================================================================
+KRITIS- & NOTSTROM-RESILIENZBERICHT (72-STUNDEN-AUTARKIE)
+================================================================================
+Gesetzliche Grundlage: BSI-Kritis-Dachgesetz / NIS-2 Richtlinie
+Auslegungslast pro Standort: 4.0 kW (4 Betreiber a 1.0 kW)
+Geforderte Überbrueckungszeit: 72 Stunden autarker Weiterbetrieb
+Erforderliche Batteriekapazitaet: 288.0 kWh (LiFePO4)
+
+Standort LOC-30 (Westflanke Forsthaus):
+  - Systemlast:                 4.0 kW (4x Multi-Tenancy)
+  - Speichersystem:             LiFePO4 48V Racksystem (288 kWh)
+  - Notstromeinspeisung:        Automatisches ATS + CEE 32A Steckfeld
+  - Investition Notstrom/USV:   14,500 EUR
+  -> KRITIS-Resilienzstatus:    KONFORM (72h Netzausfall-Resilienz)
+
+Standort LOC-31 (Talstation Sued):
+  - Systemlast:                 4.0 kW (4x Multi-Tenancy)
+  - Speichersystem:             LiFePO4 48V Racksystem (288 kWh)
+  - Notstromeinspeisung:        Automatisches ATS + CEE 32A Steckfeld
+  - Investition Notstrom/USV:   14,500 EUR
+  -> KRITIS-Resilienzstatus:    KONFORM (72h Netzausfall-Resilienz)
+
+Standort LOC-32 (Bergkuppe Nordost):
+  - Systemlast:                 4.0 kW (4x Multi-Tenancy)
+  - Speichersystem:             LiFePO4 48V Racksystem (288 kWh)
+  - Notstromeinspeisung:        Automatisches ATS + CEE 32A Steckfeld
+  - Investition Notstrom/USV:   14,500 EUR
+  -> KRITIS-Resilienzstatus:    KONFORM (72h Netzausfall-Resilienz)
+
+Gesamtinvestition KRITIS-Resilienz Cluster: 43,500 EUR
+================================================================================

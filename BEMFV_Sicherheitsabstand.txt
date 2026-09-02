@@ -1,0 +1,28 @@
+================================================================================
+BEMFV-STRAHLENSCHUTZ- & SICHERHEITSABSTANDSBERICHT (26. BImSchV)
+================================================================================
+Berechnungsgrundlage: DIN EN 50383 / ICNIRP (S_Grenzwert: 4.5 W/m^2)
+Referenz-Sendeleistung pro Sektor: 2500 W EIRP (3 Sektoren je 120 Grad)
+
+Standort LOC-30 (Westflanke Forsthaus):
+  - Mastbauhoehe:               40 m
+  - Horizontaler Schutzabstand: 6.65 m (Hauptstrahlrichtung)
+  - Vertikaler Schutzabstand:   1.46 m
+  - Reale Bodenfreiheit:        38.54 m (Grenzwert am Boden sicher unterschritten)
+  -> BEMFV-Konformitaet:        VOLLSTAENDIG GEGEBEN (Kein Konflikt mit Aufenthaltsbereichen)
+
+Standort LOC-31 (Talstation Sued):
+  - Mastbauhoehe:               30 m
+  - Horizontaler Schutzabstand: 6.65 m (Hauptstrahlrichtung)
+  - Vertikaler Schutzabstand:   1.46 m
+  - Reale Bodenfreiheit:        28.54 m (Grenzwert am Boden sicher unterschritten)
+  -> BEMFV-Konformitaet:        VOLLSTAENDIG GEGEBEN (Kein Konflikt mit Aufenthaltsbereichen)
+
+Standort LOC-32 (Bergkuppe Nordost):
+  - Mastbauhoehe:               40 m
+  - Horizontaler Schutzabstand: 6.65 m (Hauptstrahlrichtung)
+  - Vertikaler Schutzabstand:   1.46 m
+  - Reale Bodenfreiheit:        38.54 m (Grenzwert am Boden sicher unterschritten)
+  -> BEMFV-Konformitaet:        VOLLSTAENDIG GEGEBEN (Kein Konflikt mit Aufenthaltsbereichen)
+
+================================================================================

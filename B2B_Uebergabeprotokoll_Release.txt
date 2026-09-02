@@ -1,0 +1,28 @@
+================================================================================
+OFFIZIELLES B2B-STANDORTUEBERGABEPROTOKOLL & FREIGABEERKLAERUNG
+================================================================================
+Datum / Zeitstempel:   01.09.2026 15:29:26
+Dienstleistung:        Remote Site Acquisition & Technical Infrastructure Package
+Empfaenger-Kreis:      TowerCos / Mobilfunknetzbetreiber / Generalunternehmer
+
+LIEFERGEGENSTAND:
+  - Archivdatei:       B2B_Mobilfunk_Master_Dossier_2026.zip (31.0 KB)
+  - SHA-256 Hash:      4dad09e6ed109fd5005f564130e6b36228e0f6ae36f4f1bef12bafc31f9db34a
+  - Pruefsummenfile:   B2B_Mobilfunk_Master_Dossier_2026.zip.sha256
+
+ENTHALTENE FACHMODULE:
+  [1] BNetzA_Antrag_STOB.xml          (Schemakonformer Antrag gem. BEMFV/26. BImSchV)
+  [2] CAPEX_Standort_Kalkulation.xlsx (Investitionsrechnung Tiefbau & Mastbau)
+  [3] OPEX_ROI_Auswertung.xlsx        (Amortisationsanalyse fuer 2-4 Betreiber)
+  [4] Backhaul_Anbindung.xlsx         (10-Gbps-Richtfunk vs. Glasfasertrasse)
+  [5] KRITIS_Resilienz_Report.txt     (72h Notstromkonzept nach BSI-Standard)
+  [6] BEMFV_Sicherheitsabstand.txt    (DIN EN 50383 Personenschutzabstaende)
+  [7] Umwelt_Vorpruefung.json         (FFH/NSG/Wasserschutz Pufferanalyse)
+  [8] Master_Cluster_Deutschland.geojson (Makro-Geodatenstruktur EPSG:4326)
+  [9] P1_Standorte_Cluster_Karte.html (Interaktive GIS-Funkfeldkarte)
+  [10] Cluster_Einreichung_P1.txt     (Formelle Liegenschafts- & Pachtgrundlage)
+  [11] B2B_DELIVERY_VAULT_SHA512.txt  (Kryptografisches Master-Manifest)
+
+INTEGRITAETSPRUEFUNG BEIM EMPFAENGER:
+  Befehl: sha256sum -c B2B_Mobilfunk_Master_Dossier_2026.zip.sha256
+================================================================================

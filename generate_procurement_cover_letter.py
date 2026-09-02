@@ -1,0 +1,26 @@
+def create_cover_letter():
+    letter = """Sehr geehrte Damen und Herren der Einkaufs- und Partnerbetreuung,
+
+als spezialisierter Dienstleister fuer automatisierte Mobilfunk-Standortakquise und technische Liegenschaftsvorqualifizierung bieten wir Ihnen eine hocheffiziente Bearbeitung Ihrer Ausbau-Suchkreise an.
+
+UNSER LEISTUNGSUMFANG FUER IHRE PROJEKTE:
+- Deterministische Vorqualifizierung von Liegenschaften nach P1-Kriterien
+- Vollstaendige BNetzA STOB XML-Erstellung nach aktuellem Schema
+- Funkfeldberechnungen gemaess ITU-R P.525 / P.526 (LoS, Fresnelzonen, 10 Gbps E-Band)
+- Immissionsschutz- und Schutzbereichsberechnung nach DIN EN 50383 / 26. BImSchV
+- BSI-KRITIS und NIS-2 konforme 72h-USV-Dimensionierung
+
+Als praktischen Leistungsnachweis verweisen wir auf das erfolgreich vorqualifizierte Cluster 2026 (LOC-30, LOC-31, LOC-32; Master-Hash SHA-256: 819d2d9a23a4b5537c2f45f4f91dd65e9d54ebed8a44137b22dd90a6df959355).
+
+Wir stehen fuer die Aufnahme in Ihren Lieferantenpool sowie fuer Rahmenvertragsgespraeche zur Vergabe offener Suchkreise zur Verfuegung.
+
+Mit freundlichen Gruessen
+Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Kontakt: kiliajnscharf@gmail.com"""
+
+    with open("ANSCHREIBEN_EINKAUF_B2B.txt", "w", encoding="utf-8") as f:
+        f.write(letter)
+    print("Einkaufs-Anschreiben erfolgreich generiert: ANSCHREIBEN_EINKAUF_B2B.txt")
+
+if __name__ == '__main__':
+    create_cover_letter()
