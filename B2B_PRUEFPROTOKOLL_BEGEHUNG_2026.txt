@@ -1,0 +1,24 @@
+================================================================================
+B2B-FACILITY-MANAGEMENT PRUEFPROTOKOLL (DIN 31051 / DGUV V3)
+Erstellungsdatum:  02.09.2026 06:14:09
+Objektstandort:    Haus im Wind (LOC-30 bis LOC-32, Bad Pyrmont)
+Pruefverantwortung: Technischer Liegenschaftsbetrieb (Tier-1)
+================================================================================
+
+Prüfbereich / Bauteil    | Normvorgabe  | Prüfverfahren                    | Status
+----------------------------------------------------------------------------------------
+Hauptverteilung UV-01    | DGUV V3      | RCD-Ausloesezeit & Thermografie  | MAENGELFREI
+LiFePO4 Pufferbank       | VDE 0510     | Zellendrift & BMS-Kommunikation  | MAENGELFREI
+Notbeleuchtung Treppe    | DIN EN 1838  | Funktionstest Akku-Einzelbatterie | MAENGELFREI
+Brandschutztuer T30      | DIN 4102     | Selbstschliessung & Dichtungen   | MAENGELFREI
+Schliessanlage Zylinder  | DIN 18252    | Leichtgaengigkeit & Protokoll    | MAENGELFREI
+Klimatisierung Rack      | VDI 2054     | Filtervlies G4/F7 Durchsatz      | MAENGELFREI
+----------------------------------------------------------------------------------------
+
+BEWERTUNG DES LIEGENSCHAFTSBETRIEBS:
+[X] 1. Alle primaeren Schutzfunktionen gemaess DGUV V3 und DIN EN 1838 erfuellt.
+[X] 2. Keine Sicherheitsmaengel der Kategorie 1 (Gefahr im Verzug) vorhanden.
+[X] 3. Revisionssicher vorbereitet fuer die Begehung durch Sachverstaendige.
+================================================================================
+STATUS: LIEGENSCHAFTS-PRUEFPROTOKOLL ZU 100% GENERIERT (PLATZ 1)
+================================================================================
