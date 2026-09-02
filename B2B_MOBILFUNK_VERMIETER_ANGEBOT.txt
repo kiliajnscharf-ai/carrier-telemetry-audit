@@ -1,0 +1,38 @@
+================================================================================
+PROJEKT HAUS IM WIND: VERMIETER- & GRUNDSTÜCKSANGEBOT (PHASE 96)
+Erstellungszeitpunkt: 02.09.2026 08:53:09
+Empfänger:          Vantage Towers / Deutsche Telekom Towers / Telefónica Infra
+Objektstandort:     Region Bad Pyrmont & Weserbergland (LOC-30 bis LOC-32)
+================================================================================
+FORMELLES GRUNDSTÜCKSANGEBOT FÜR MOBILFUNK-NEUBAU-MASTEN:
+
+Sehr geehrte Damen und Herren,
+
+hiermit bieten wir Ihnen im Rahmen unseres Liegenschaftsmanagements drei strategisch
+hochwertige und bautechnisch vorbereitete Potentialflächen für den Neubau von Mobilfunkmasten
+zur Schließung von Abdeckungslücken (White Spots) in der Region Bad Pyrmont an:
+
+1. ANGEBOT FLÄCHE 1 (ID: SITE-BAD-01 - Bad Pyrmont Süd / Kurpark-Rand):
+   - Eignung: Hanganschnitt, optimal zur Versorgung des Talkessels.
+   - Struktur: Monopole / Tarnmast (h=30m), optisch integriert.
+   - Erschließung: Zufahrt über Wirtschaftswege, Strom/Glasfaser im Nahbereich.
+
+2. ANGEBOT FLÄCHE 2 (ID: SITE-BAD-02 - Gewerbegebiet Holzhausen):
+   - Eignung: Unbebaute Randfläche, ideal für Multi-Operator-Gittermast (h=40m).
+   - Erschließung: LKW-Zufahrt, Starkstrom und Haupt-Glasfasertrasse direkt an der Grundstücksgrenze.
+
+3. ANGEBOT FLÄCHE 3 (ID: SITE-BAD-03 - Emmertal-Grenze / Kahlberg):
+   - Eignung: Exponierte Richtfunkkante zur Entlastung der B83.
+   - Struktur: Robuster Gittermast (h=35m) für Breitband- und Mobilfunkversorgung.
+
+Alle Standorte verfügen über gesicherte Eigentümerstrukturen und uneingeschränkte baurechtliche
+Voraussetzungen gemäß DIN EN 1991/1993 sowie BNetzA-Konformität.
+
+Wir freuen uns auf Ihre Rückmeldung zur Aufnahme in die Ausbauplanung 2026/2027.
+
+Mit freundlichen Grüßen
+Facility Management 'Haus im Wind' (Tier-1 Autarkie - Platz 1)
+
+================================================================================
+STATUS: VERMIETER-ANGEBOTSDOSSIER ERFOLGREICH GENERIERT (PLATZ 1).
+================================================================================
