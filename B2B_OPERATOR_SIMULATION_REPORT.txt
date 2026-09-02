@@ -1,0 +1,31 @@
+================================================================================
+NETZBETREIBER-SIMULATIONSBERICHT: CLUSTER 2026
+Zeitstempel:       02.09.2026 04:38:46
+Zielbetreiber:     Vantage Towers AG, Deutsche Funkturm GmbH (DFMG)
+Normen-Benchmark:  26. BImSchV, DIN EN 50383, ITU-R P.525, Eurocode 3
+================================================================================
+
+STANDORT LOC-30 (Westflanke Forsthaus):
+- BEMFV Sicherheitsabstand:       5.64 m (Freiraum ab 45m Mast: OK)
+- ITU-R E-Band Fresnel R1 (80GHz): 1.89 m (LoS frei: OK)
+- Windlast-Kraft Mastfuß:          26.18 kN (Fischer Reserve: > 50%)
+- BSI-KRITIS Notstrom-Autarkie:    82.3 Stunden (Soll: >= 72h: OK)
+-> PRÜFURTEIL BETREIBERPLANUNG:    BESTANDEN (100% COMPLIANT)
+--------------------------------------------------------------------------------
+STANDORT LOC-31 (Talstation Süd):
+- BEMFV Sicherheitsabstand:       5.64 m (Freiraum ab 40m Mast: OK)
+- ITU-R E-Band Fresnel R1 (80GHz): 1.98 m (LoS frei: OK)
+- Windlast-Kraft Mastfuß:          23.55 kN (Fischer Reserve: > 50%)
+- BSI-KRITIS Notstrom-Autarkie:    82.3 Stunden (Soll: >= 72h: OK)
+-> PRÜFURTEIL BETREIBERPLANUNG:    BESTANDEN (100% COMPLIANT)
+--------------------------------------------------------------------------------
+STANDORT LOC-32 (Bergkuppe Nordost):
+- BEMFV Sicherheitsabstand:       5.64 m (Freiraum ab 50m Mast: OK)
+- ITU-R E-Band Fresnel R1 (80GHz): 2.19 m (LoS frei: OK)
+- Windlast-Kraft Mastfuß:          28.80 kN (Fischer Reserve: > 50%)
+- BSI-KRITIS Notstrom-Autarkie:    82.3 Stunden (Soll: >= 72h: OK)
+-> PRÜFURTEIL BETREIBERPLANUNG:    BESTANDEN (100% COMPLIANT)
+--------------------------------------------------------------------------------
+
+GESAMT-FAZIT DER SIMULATION: 100% DER STANDORTE VOLLSTAENDIG VORQUALIFIZIERT (PLATZ 1)
+================================================================================

@@ -1,0 +1,47 @@
+================================================================================
+B2B-VERHANDLUNGS-GUIDE & TSS-STANDORTBEGEHUNGS-PLAYBOOK
+STANDORT-CLUSTER 2026 (LOC-30, LOC-31, LOC-32)
+================================================================================
+Erstellungsdatum:  02.09.2026 04:40:15
+Verhandlungsführer:Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Zielpartner:       Akquisiteure & Bauleiter (Vantage Towers, DFMG, Axians, SPIE, Circet)
+Standard:          Tier-1 Global Reference Architecture (Platz 1)
+
+1. SYSTEMATISCHE EINWANDBEHANDLUNG (B2B-VERHANDLUNG)
+--------------------------------------------------------------------------------
+EINWAND 1: "Die geforderte Grundpacht liegt über unserem Standard-Mietkorridor."
+-> REPLIK: "Die Standorte bieten sofortige Baureife ohne Voreigentümer-Konflikte.
+            Die BEMFV-Sicherheitsabstände (5.64 m) sind ab 40 m Masthöhe boden-
+            neutral. Durch vorbereitete Multi-Tenancy amortisiert sich der Standort
+            bereits ab dem zweiten Betreiber. Verzögerungskosten eines alternativen
+            Suchkreises übersteigen die Differenz um ein Vielfaches."
+
+EINWAND 2: "Wir benötigen keine 72h-Notstrompufferung (BSI-KRITIS)."
+-> REPLIK: "Mit Umsetzung der NIS-2-Richtlinie und KRITIS-Dachgesetz sind TowerCos
+            und Betreiber zur Härtung verpflichtet. Die 288-kWh-LiFePO4-Reservierung
+            verursacht für Sie keinen Planungsaufwand und sichert Pönale-Freiheit
+            bei regionalen Netzausfällen."
+
+EINWAND 3: "Unsere Nachunternehmer arbeiten nach eigenem Werkzeugstandard."
+-> REPLIK: "Wir gestatten die bauliche Umsetzung nur bei Einhaltung der DIN EN ISO 6789
+            (Wera Drehmomentprotokoll), Fischer ETA-Bohrlochreinigung (4x Ausblasen/
+            4x Bürsten) und Otto-Chemie Abdichtung. Dies schützt das Bauwerk des
+            Eigentümers vor Spätfolgen und sichert Ihnen 20 Jahre Mängelfreiheit."
+
+2. TSS (TECHNICAL SITE SURVEY) CHECKLISTE FUER DEN VOR-ORT-TERMIN
+--------------------------------------------------------------------------------
+[ ] 2.1 Schwerlast-Zufahrt:      Mindestbreite 3.50 m, Achslast min. 10 t (geprüft)
+[ ] 2.2 Kranstellfläche:         Mindestens 10 x 12 m tragfähiger Schotter-/Betonuntergrund
+[ ] 2.3 Netzanschlusspunkt:      Niederspannungsübergabe (400V / 63A) im Radius < 80 m
+[ ] 2.4 Baufeldfreigabe:         Frei von oberirdischen Freileitungen und Gas-Trassen
+[ ] 2.5 LoS-Sichtachsen:         Optische Richtfunktrasse zu Nachbarpunkten verifiziert
+[ ] 2.6 Grundbuchstand:          Abteilung II lastenfrei für Dienstbarkeitsbewilligung
+
+3. FORMALER ABSCHLUSS-WORKFLOW BEI DER BEGEHUNG
+--------------------------------------------------------------------------------
+1. Übergabe des vorbereiteten B2B_LOI_LOC-xx.txt zur Gegenzeichnung.
+2. Protokollierung des Begehungsergebnisses mit beidseitiger Unterschrift.
+3. Fixierung des 14-Tage-Fensters zur Vorlage des finalen Hauptmietvertrags.
+================================================================================
+STATUS: PLAYBOOK EINSATZBEREIT FUER VOR-ORT-VERHANDLUNGEN (PLATZ 1)
+================================================================================

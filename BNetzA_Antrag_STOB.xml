@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<BNetzA_STOB_Antrag version="2026.1" standard="BEMFV_26_BImSchV">
+  <Antragsteller>
+    <Unternehmen>Infrastrukturgesellschaft / TowerCo</Unternehmen>
+    <Verfahren>Neuerteilung Standortbescheinigung</Verfahren>
+  </Antragsteller>
+  <Standortliste>
+    <Standort id="LOC-30">
+      <Bezeichnung>Westflanke Forsthaus</Bezeichnung>
+      <Breitengrad>51.9875</Breitengrad>
+      <Laengengrad>9.245</Laengengrad>
+      <Gelaendehoehe_m>285</Gelaendehoehe_m>
+      <Bautechnik>
+        <Masttyp>40m Gittermast</Masttyp>
+        <Gesamthoehe_m>40</Gesamthoehe_m>
+        <Antennenunterkante_m>38.0</Antennenunterkante_m>
+      </Bautechnik>
+      <Funkfelder>
+        <Sektor nr="1">
+          <Hauptstrahlrichtung_Grad>0</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+        <Sektor nr="2">
+          <Hauptstrahlrichtung_Grad>120</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+        <Sektor nr="3">
+          <Hauptstrahlrichtung_Grad>240</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+      </Funkfelder>
+      <Standortmitbenutzung>
+        <Betreiber>Deutsche Telekom</Betreiber>
+        <Betreiber>Vodafone</Betreiber>
+        <Betreiber>Telefonica O2</Betreiber>
+        <Betreiber>1&amp;1 Mobilfunk</Betreiber>
+      </Standortmitbenutzung>
+    </Standort>
+    <Standort id="LOC-31">
+      <Bezeichnung>Talstation Sued</Bezeichnung>
+      <Breitengrad>51.972</Breitengrad>
+      <Laengengrad>9.231</Laengengrad>
+      <Gelaendehoehe_m>195</Gelaendehoehe_m>
+      <Bautechnik>
+        <Masttyp>30m Schleuderbetonmast</Masttyp>
+        <Gesamthoehe_m>30</Gesamthoehe_m>
+        <Antennenunterkante_m>28.0</Antennenunterkante_m>
+      </Bautechnik>
+      <Funkfelder>
+        <Sektor nr="1">
+          <Hauptstrahlrichtung_Grad>0</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+        <Sektor nr="2">
+          <Hauptstrahlrichtung_Grad>120</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+        <Sektor nr="3">
+          <Hauptstrahlrichtung_Grad>240</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+      </Funkfelder>
+      <Standortmitbenutzung>
+        <Betreiber>Deutsche Telekom</Betreiber>
+        <Betreiber>Vodafone</Betreiber>
+        <Betreiber>Telefonica O2</Betreiber>
+        <Betreiber>1&amp;1 Mobilfunk</Betreiber>
+      </Standortmitbenutzung>
+    </Standort>
+    <Standort id="LOC-32">
+      <Bezeichnung>Bergkuppe Nordost</Bezeichnung>
+      <Breitengrad>52.001</Breitengrad>
+      <Laengengrad>9.278</Laengengrad>
+      <Gelaendehoehe_m>310</Gelaendehoehe_m>
+      <Bautechnik>
+        <Masttyp>40m Gittermast</Masttyp>
+        <Gesamthoehe_m>40</Gesamthoehe_m>
+        <Antennenunterkante_m>38.0</Antennenunterkante_m>
+      </Bautechnik>
+      <Funkfelder>
+        <Sektor nr="1">
+          <Hauptstrahlrichtung_Grad>0</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+        <Sektor nr="2">
+          <Hauptstrahlrichtung_Grad>120</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+        <Sektor nr="3">
+          <Hauptstrahlrichtung_Grad>240</Hauptstrahlrichtung_Grad>
+          <EIRP_Watt>2500</EIRP_Watt>
+          <Frequenzbaender>700, 800, 900, 1800, 2100, 3500 MHz</Frequenzbaender>
+          <Sicherheitsabstand_Horizontal_m>6.65</Sicherheitsabstand_Horizontal_m>
+          <Sicherheitsabstand_Vertikal_m>1.46</Sicherheitsabstand_Vertikal_m>
+        </Sektor>
+      </Funkfelder>
+      <Standortmitbenutzung>
+        <Betreiber>Deutsche Telekom</Betreiber>
+        <Betreiber>Vodafone</Betreiber>
+        <Betreiber>Telefonica O2</Betreiber>
+        <Betreiber>1&amp;1 Mobilfunk</Betreiber>
+      </Standortmitbenutzung>
+    </Standort>
+  </Standortliste>
+</BNetzA_STOB_Antrag>

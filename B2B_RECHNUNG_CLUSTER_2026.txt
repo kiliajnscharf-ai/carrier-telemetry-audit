@@ -1,0 +1,43 @@
+================================================================================
+ELEKTRONISCHE B2B-RECHNUNG NACH § 14 USTG / EN 16931
+PROJEKT HAUS IM WIND | LIEGENSCHAFTS- & INFRASTRUKTURMANAGEMENT
+================================================================================
+Rechnungsnummer:   INV-HIW-20260902-001
+Rechnungsdatum:    02.09.2026
+Fälligkeitsdatum:  16.09.2026 (Zahlungsziel: 14 Tage netto ohne Abzug)
+Leistungszeitraum: 01.09.2026 - 30.09.2026
+Leitweg-ID / Ref:  VANTAGE-DE-993-DFMG-2026
+
+RECHNUNGSSTELLER:
+Kilian Scharf (Liegenschafts- und Infrastrukturmanagement Haus im Wind)
+31812 Bad Pyrmont | Deutschland
+E-Mail: kiliajnscharf@gmail.com
+
+RECHNUNGSEMPFAENGER:
+Vantage Towers AG / Deutsche Funkturm GmbH (DFMG)
+Zentraler Konzerneinkauf / Accounts Payable
+Deutschland
+
+ABRECHNUNGSPOSITIONEN:
+--------------------------------------------------------------------------------
+Pos. | Leistungsbezeichnung                          | Menge | Einzelpreis | Gesamt (netto)
+--------------------------------------------------------------------------------
+1    | Meilensteinhonorar Phase 1: Vorprüfung LOC-30 bis 32 | 3     |   1500.00 € |     4500.00 €
+2    | Meilensteinhonorar Phase 2: Standortsicherung & LoI | 3     |   3500.00 € |    10500.00 €
+3    | Meilensteinhonorar Phase 3: BNetzA STOB XML & Baureife | 3     |   2000.00 € |     6000.00 €
+4    | Monatliche Gestattungspacht Cluster 2026 (Monat 1) | 1     |   4000.00 € |     4000.00 €
+5    | Monatliche SLA-Wartungspauschale DIN 31051 (Monat 1) | 1     |   1350.00 € |     1350.00 €
+--------------------------------------------------------------------------------
+NETTO-RECHNUNGSBETRAG:                                              26350.00 €
+Umsatzsteuer (19 %):                                                 5006.50 €
+================================================================================
+GESAMTBETRAG BRUTTO:                                                31356.50 €
+================================================================================
+
+BANKVERBINDUNG:
+Kontoempfänger:    Kilian Scharf
+Zahlungsgrund:     INV-HIW-20260902-001
+Standard:          SEPA B2B Credit Transfer
+
+STATUS: RECHNUNG REVISIONS- UND BETRIEBSPRUEFUNGSFEST (PLATZ 1).
+================================================================================

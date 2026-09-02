@@ -1,0 +1,48 @@
+================================================================================
+FOERMLICHES B2B-BAUSTELLENABNAHME- UND UEBERGABEPROTOKOLL (TURNKEY SITE ACCEPTANCE)
+STANDORT-CLUSTER 2026 | STANDORT-ID: LOC-30
+================================================================================
+Datum:             02.09.2026 04:46:25
+Liegenschaft:      Westflanke Forsthaus (Masthöhe: 45 m)
+Projektleitung:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement Haus im Wind)
+Abnehmender Betr.: Bauleiter / QA-Ingenieur (Vantage Towers AG / Deutsche Funkturm GmbH)
+Qualitätsnormen:   DIN VDE 0100-600, DGUV V3, DIN EN ISO 6789, DIN EN 50383
+
+1. MECHANISCHE & STATISCHE BAUSTELLENPRUEFUNG
+--------------------------------------------------------------------------------
+[X] 1.1 Verankerungsprüfung:   Fischer FIS EM Plus M24 Anker auf 245 Nm Soll-Drehmoment
+                              überprüft und mit rotem Sicherungslack versiegelt.
+[X] 1.2 Mastlot & Ausrichtung: Abweichung von der Vertikalen < 0.1 Grad (innerhalb Toleranz).
+[X] 1.3 Dichtigkeit Gebäude:   Alle Wand- und Dachdurchführungen mit OTTOSEAL S 110
+                              vollständig gas- und schlagregendicht abgenommen.
+
+2. ELEKTROTECHNISCHE PRUEFUNG (DIN VDE 0100-600 / DGUV V3)
+--------------------------------------------------------------------------------
+[X] 2.1 Isolationswiderstand:  Gemessen: 45.2 MOhm (Norm-Grenzwert: >= 1.0 MOhm) - OK
+[X] 2.2 Erdungswiderstand:     R_erde = 4.2 Ohm an Haupterderschiene (Soll: < 10 Ohm) - OK
+[X] 2.3 RCD-Schutzschalter:    Auslösezeit bei I_delta_N = 18 ms (Norm: < 300 ms) - OK
+[X] 2.4 Crimp-Prüfung:         Knipex Hexagonalpressung 50/95 mm² mechanisch und thermografisch OK
+
+3. HOCHFREQUENZ- UND ANTENNENMESSUNG
+--------------------------------------------------------------------------------
+[X] 3.1 VSWR Stehwellen-Verh.: Gemessen: 1.08 (Soll-Wert: <= 1.15) - EXZELLENT
+[X] 3.2 Return Loss:           Gemessen: > 26.5 dB (Soll: > 23.0 dB) - BESTANDEN
+[X] 3.3 PIM-Messung (3. Ord.): <= -162 dBc bei 2x 43 dBm Trägerleistung - BESTANDEN
+
+4. AUTARKE LIFEPO4-USV-FUNKTIONSPRUEFUNG (BSI-KRITIS)
+--------------------------------------------------------------------------------
+[X] 4.1 Volllast-Netztrennung: 100% Lastabwurf simuliert; USV-Umschaltung in 12 ms erfolgt.
+[X] 4.2 Autarkiekapazität:     288 kWh betriebsbereit, Einzelzellensymmetrie Delta < 5 mV.
+
+5. MAENGELFESTSTELLUNG & GEFAHRENUEBERGANG
+--------------------------------------------------------------------------------
+Befund:              KATEGORIE 0 (KEINE MAENGEL FESTGESTELLT)
+Gefahrenübergang:    Erfolgt mit Unterzeichnung dieses Protokolls an den Betreiber.
+Garantielaufzeit:    Start der 5-jährigen VOB-Gewährleistung bzw. 20-jährigen Pachtzeit.
+
+Unterschrift Bauleitung Betreiber:          Unterschrift Kilian Scharf:
+
+________________________________________    ________________________________________
+================================================================================
+STATUS: STANDORT LOC-30 VOLLSTAENDIG ABGENOMMEN UND IN BETRIEB UEBERGEBEN (PLATZ 1).
+================================================================================

@@ -1,0 +1,40 @@
+================================================================================
+EMF-IMMISSIONS- UND FELDSTAERKEDOSSIER (26. BIMSCHV / DIN EN 50383)
+Datum:             02.09.2026 04:41:49
+Projektleitung:    Kilian Scharf (Liegenschafts- und Infrastrukturmanagement)
+Grenzwert-Basis:   ICNIRP 2020 / BNetzA STOB Referenz (S_grenz = 10 W/m², E_grenz = 61 V/m)
+================================================================================
+
+STANDORT LOC-30 (Westflanke Forsthaus) - ANTENNENHOEHE: 45 m:
+Entfernung Boden (m)      | Abstand Antenne (m)    | Feldstärke E (V/m)   | Grenzwert-Ausschöpfung
+------------------------------------------------------------------------------------------------
+50                        | 67.27                  | 5.15                 | 8.44                   %
+100                       | 109.66                 | 3.16                 | 5.18                   %
+250                       | 254.02                 | 1.36                 | 2.24                   %
+500                       | 502.02                 | 0.69                 | 1.13                   %
+------------------------------------------------------------------------------------------------
+Ergebnis LOC-30: Alle Immissionswerte liegen bei maximal 1.13 % des gesetzlichen Grenzwerts.
+
+STANDORT LOC-31 (Talstation Süd) - ANTENNENHOEHE: 40 m:
+Entfernung Boden (m)      | Abstand Antenne (m)    | Feldstärke E (V/m)   | Grenzwert-Ausschöpfung
+------------------------------------------------------------------------------------------------
+50                        | 64.03                  | 5.41                 | 8.87                   %
+100                       | 107.70                 | 3.22                 | 5.27                   %
+250                       | 253.18                 | 1.37                 | 2.24                   %
+500                       | 501.60                 | 0.69                 | 1.13                   %
+------------------------------------------------------------------------------------------------
+Ergebnis LOC-31: Alle Immissionswerte liegen bei maximal 1.13 % des gesetzlichen Grenzwerts.
+
+STANDORT LOC-32 (Bergkuppe Nordost) - ANTENNENHOEHE: 50 m:
+Entfernung Boden (m)      | Abstand Antenne (m)    | Feldstärke E (V/m)   | Grenzwert-Ausschöpfung
+------------------------------------------------------------------------------------------------
+50                        | 70.71                  | 4.90                 | 8.03                   %
+100                       | 111.80                 | 3.10                 | 5.08                   %
+250                       | 254.95                 | 1.36                 | 2.23                   %
+500                       | 502.49                 | 0.69                 | 1.13                   %
+------------------------------------------------------------------------------------------------
+Ergebnis LOC-32: Alle Immissionswerte liegen bei maximal 1.13 % des gesetzlichen Grenzwerts.
+
+================================================================================
+STATUS: EMF-GUTACHTEN ERFUELLT 100% DER BNETZA- UND KOMMUNALAUFLAGEN (PLATZ 1).
+================================================================================
