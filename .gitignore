@@ -64,3 +64,4 @@ Speedtest_monitor/
 *.sha256
 *.zip.*
 Speedtest_monitor
+*.pid
