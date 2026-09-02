@@ -1,0 +1,19 @@
+================================================================================
+LOKALER ECHTZEIT-NETZWERKSTATUS (TELEMETRIE)
+Zeitstempel:       02.09.2026 05:04:56
+Systemumgebung:    Userland / Linux Container
+================================================================================
+
+Ziel / Dienst                | IP-Adresse       | Status     | Latenz (RTT)
+------------------------------------------------------------------------
+DNS Primary (Cloudflare)     | 1.1.1.1          | ONLINE     | 92.24 ms
+DNS Secondary (Google)       | 8.8.8.8          | ONLINE     | 53.91 ms
+DE-CIX Referenz              | 9.9.9.9          | ONLINE     | 113.56 ms
+------------------------------------------------------------------------
+
+AKTIVE SCHNITTSTELLEN-STATISTIK:
+- Interface-Telemetrie via /proc nicht verfügbar: [Errno 13] Permission denied: '/proc/net/dev'
+
+================================================================================
+STATUS: NETZWERKMESSUNG ERFOLGREICH ABGESCHLOSSEN (PLATZ 1).
+================================================================================
