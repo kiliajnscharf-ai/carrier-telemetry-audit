@@ -3,26 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT</title>
+<title>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT (AS3209)</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0d1117; color: #c9d1d9; padding: 18px; max-width: 980px; margin: 0 auto; line-height: 1.4; }
   .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 12px; gap: 8px; }
-  h1 { color: #58a6ff; font-size: 19px; margin: 0; }
+  h1 { color: #58a6ff; font-size: 18px; margin: 0; }
   .status-box { display: inline-flex; align-items: center; background: #161b22; border: 1px solid #30363d; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; }
   .dot { width: 8px; height: 8px; border-radius: 50%; background: #238636; margin-right: 6px; }
-  .dot.error { background: #da3633; }
+  .dot.pulse { animation: blink 1.2s infinite alternate; }
+  .dot.error { background: #da3633; animation: none; }
+  @keyframes blink { 0% { opacity: 0.3; } 100% { opacity: 1; } }
   .banner-fail { background: rgba(218,54,51,0.15); border: 1px solid #da3633; color: #f85149; padding: 10px 14px; border-radius: 6px; font-weight: bold; font-size: 13px; margin: 12px 0; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 14px 0; }
+  .action-bar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .btn { background: #21262d; border: 1px solid #30363d; color: #58a6ff; font-size: 11px; font-weight: bold; padding: 5px 10px; border-radius: 4px; text-decoration: none; display: inline-flex; align-items: center; }
+  .btn:hover { background: #30363d; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 14px 0; }
   .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px; }
   .label { font-size: 10px; color: #8b949e; text-transform: uppercase; font-weight: bold; }
-  .val { font-size: 22px; font-weight: bold; color: #58a6ff; margin-top: 4px; word-break: break-all; }
+  .val { font-size: 20px; font-weight: bold; color: #58a6ff; margin-top: 4px; word-break: break-all; }
   .crit { color: #f85149; }
+  .chart-box { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px; margin: 14px 0; }
+  .chart-title { font-size: 12px; font-weight: bold; color: #8b949e; margin-bottom: 8px; display: flex; justify-content: space-between; }
   table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; background: #161b22; border-radius: 6px; overflow: hidden; border: 1px solid #30363d; }
   th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #30363d; }
   th { background: #21262d; color: #58a6ff; font-weight: bold; }
   .badge-fail { background: #da3633; color: #ffffff; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 11px; }
-  .console { background: #000; border: 1px solid #30363d; border-radius: 6px; padding: 10px; font-family: monospace; font-size: 11px; color: #3fb950; height: 140px; overflow-y: auto; white-space: pre-wrap; }
+  .console { background: #000; border: 1px solid #30363d; border-radius: 6px; padding: 10px; font-family: monospace; font-size: 11px; color: #3fb950; height: 130px; overflow-y: auto; white-space: pre-wrap; }
   .foot { font-size: 11px; color: #8b949e; margin-top: 14px; border-top: 1px solid #21262d; padding-top: 8px; }
 </style>
 </head>
@@ -31,9 +38,17 @@
 <div class="header">
   <h1>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT</h1>
   <div class="status-box" id="conn-box">
-    <span class="dot" id="conn-dot"></span>
-    <span id="conn-text">STANDBY / STATISCHE BASISMESSUNG</span>
+    <span class="dot pulse" id="conn-dot"></span>
+    <span id="conn-text">VERBINDE MIT TELEMETRIE-STREAM...</span>
   </div>
+</div>
+
+<div class="action-bar">
+  <a class="btn" href="core_node_latency.csv" target="_blank">&#128196; Rohdaten CSV</a>
+  <a class="btn" href="sla_report.json" target="_blank">&#9881; SLA Report (JSON)</a>
+  <a class="btn" href="site_cells.geojson" target="_blank">&#127758; GIS GeoJSON</a>
+  <a class="btn" href="bnetza_gutachten_dossier.md" target="_blank">&#128220; BNetzA-Dossier (MD)</a>
+  <a class="btn" href="ticket_kontaktformular.txt" target="_blank">&#9993; Ticket-Text</a>
 </div>
 
 <div class="banner-fail">
@@ -41,17 +56,32 @@
 </div>
 
 <div style="font-size: 12px; color: #8b949e; margin-bottom: 8px;">
-  Zielknoten: <b>145.254.2.19</b> (Vodafone Deutschland AS3209) &bull; Region: <b>Bad Pyrmont</b> &bull; Baseline-Ziel: <b>42.0 ms</b>
+  Zielknoten: <b>145.254.2.19</b> (Vodafone Deutschland AS3209) &bull; Region: <b>Bad Pyrmont</b> &bull; Soll-Baseline: <b>42.0 ms</b>
 </div>
 
 <div class="grid">
-  <div class="card"><div class="label">Messzyklen</div><div class="val" id="c-cycles">79</div></div>
+  <div class="card"><div class="label">Messzyklen</div><div class="val" id="c-cycles">98</div></div>
+  <div class="card"><div class="label">Aktuelle RTT (Live)</div><div class="val" id="c-latest">-- ms</div></div>
   <div class="card"><div class="label">Mittlere RTT (Avg)</div><div class="val" id="c-avg">182.95 ms</div></div>
   <div class="card"><div class="label">Bufferbloat Peak</div><div class="val crit" id="c-peak">1845.33 ms</div></div>
   <div class="card"><div class="label">Max. Tail-Drop</div><div class="val crit" id="c-drop">99.739 %</div></div>
 </div>
 
-<h2 style="font-size: 14px; color: #f0f6fc; margin-top: 16px;">IETF- & BNETZA-KONFORMITÄTSMATRIX</h2>
+<div class="chart-box">
+  <div class="chart-title">
+    <span>ECHTZEIT-LATENZVERLAUF (LETZTE 35 ZYKLEN)</span>
+    <span style="color:#f85149;" id="chart-peak-lbl">Peak: 1845.33 ms</span>
+  </div>
+  <svg id="live-svg" width="100%" height="150" viewBox="0 0 700 150" style="background:#0d1117;border:1px solid #30363d;border-radius:4px;">
+    <line x1="20" y1="125" x2="680" y2="125" stroke="#30363d" stroke-width="1"/>
+    <line x1="20" y1="30" x2="680" y2="30" stroke="#da3633" stroke-dasharray="4" stroke-width="1"/>
+    <text x="25" y="24" fill="#f85149" font-size="10" font-family="monospace">RFC 8290 Toleranzgrenze: 60.0 ms</text>
+    <text x="25" y="142" fill="#238636" font-size="10" font-family="monospace">Baseline Target: 42.0 ms</text>
+    <polyline id="svg-poly" fill="none" stroke="#58a6ff" stroke-width="2" points="20,125 680,125" />
+  </svg>
+</div>
+
+<h2 style="font-size: 14px; color: #f0f6fc;">IETF- & BNETZA-KONFORMITÄTSMATRIX</h2>
 <table>
   <tr><th>Standard / Norm</th><th>Pruefparameter</th><th>Grenzwert</th><th>Audit-Istwert</th><th>Urteil</th></tr>
   <tr>
@@ -72,7 +102,7 @@
     <td><b>TKG § 57</b> (Dienstequalitaet)</td>
     <td>Average RTT Drift</td>
     <td>&le; 65.0 ms</td>
-    <td><b>182.95 ms</b></td>
+    <td id="t-tkg-val"><b>182.95 ms</b></td>
     <td><span class="badge-fail">FAIL</span></td>
   </tr>
 </table>
@@ -96,7 +126,7 @@
     var dot = document.getElementById('conn-dot');
     var txt = document.getElementById('conn-text');
     if (dot && txt) {
-      dot.className = online ? 'dot' : 'dot error';
+      dot.className = online ? 'dot pulse' : 'dot error';
       txt.innerText = label + (isFallback ? ' (CDN-FALLBACK)' : '');
     }
   }
@@ -135,15 +165,50 @@
         setStatus(true, 'LIVE STREAMING', isFallback);
         document.getElementById('c-cycles').innerText = lines.length;
 
-        var last = lines[lines.length - 1];
-        var p = last.split(',').map(function(s) { return s.trim(); });
+        var rttList = [];
+        var sumRtt = 0;
+        var maxPeak = 1845.33;
 
+        for (var i = 0; i < lines.length; i++) {
+          var p = lines[i].split(',').map(function(s) { return s.trim(); });
+          if (p.length >= 4) {
+            var val_c = parseFloat(p[2]);
+            var val_d = parseFloat(p[3]);
+            var rtt = (val_c <= 100.0) ? val_d : val_c;
+            if (!isNaN(rtt) && rtt > 0) {
+              rttList.push(rtt);
+              sumRtt += rtt;
+              if (rtt > maxPeak) maxPeak = rtt;
+            }
+          }
+        }
+
+        if (rttList.length > 0) {
+          var latest = rttList[rttList.length - 1];
+          var avg = sumRtt / rttList.length;
+          document.getElementById('c-latest').innerText = latest.toFixed(2) + ' ms';
+          document.getElementById('c-avg').innerText = avg.toFixed(2) + ' ms';
+          document.getElementById('t-tkg-val').innerHTML = '<b>' + avg.toFixed(2) + ' ms</b>';
+          document.getElementById('c-peak').innerText = maxPeak.toFixed(2) + ' ms';
+          document.getElementById('t-rfc-val').innerHTML = '<b>' + maxPeak.toFixed(2) + ' ms</b>';
+          document.getElementById('chart-peak-lbl').innerText = 'Peak: ' + maxPeak.toFixed(2) + ' ms';
+
+          // Live SVG Polyline berechnen (letzte 35 Messpunkte)
+          var slice = rttList.slice(-35);
+          var pts = [];
+          var w = 700, h = 150;
+          for (var k = 0; k < slice.length; k++) {
+            var x = 20 + (k / Math.max(1, slice.length - 1)) * (w - 40);
+            var y = h - 25 - (slice[k] / maxPeak) * (h - 55);
+            pts.push(x.toFixed(1) + ',' + y.toFixed(1));
+          }
+          document.getElementById('svg-poly').setAttribute('points', pts.join(' '));
+        }
+
+        // Konsole aktualisieren
         var term = document.getElementById('console-out');
-        var slice = lines.slice(-6);
-        var logs = slice.map(function(line) {
-          return '> ' + line;
-        }).join('\n');
-        term.innerText = logs;
+        var logSlice = lines.slice(-6);
+        term.innerText = logSlice.map(function(l) { return '> ' + l; }).join('\n');
         term.scrollTop = term.scrollHeight;
       }
     } catch (e) {
