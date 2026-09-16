@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "project": "Vantage Towers Site Assessment",
+    "site_name": "Bad Pyrmont Windmuehle Corridor",
+    "structure": "SGM 35 Lattice Tower / SBM 30 Concrete",
+    "target_core_node": "145.254.2.19"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "sector": 1,
+        "azimuth_deg": 0,
+        "beamwidth_deg": 65,
+        "frequency_bands": [
+          "700MHz",
+          "800MHz",
+          "1800MHz",
+          "3500MHz"
+        ],
+        "purpose": "Tal- und Kernausleuchtung Nord"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.255,
+          51.985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "sector": 2,
+        "azimuth_deg": 120,
+        "beamwidth_deg": 65,
+        "frequency_bands": [
+          "700MHz",
+          "800MHz",
+          "1800MHz",
+          "3500MHz"
+        ],
+        "purpose": "Hang- und Randlagenentlastung Suedost"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.255,
+          51.985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "sector": 3,
+        "azimuth_deg": 240,
+        "beamwidth_deg": 65,
+        "frequency_bands": [
+          "700MHz",
+          "800MHz",
+          "1800MHz",
+          "3500MHz"
+        ],
+        "purpose": "Ueberland-Verbund und Backhaul-Zufuehrung West"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.255,
+          51.985
+        ]
+      }
+    }
+  ]
+}
