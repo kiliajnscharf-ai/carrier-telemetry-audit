@@ -1,0 +1,28 @@
+STÖRUNGSMELDUNG & TECHNISCHES AUDIT (§ 57 TKG)
+Weiterleitung an: NOC Transport / Core Engineering (AS3209)
+Betroffener Hop: 145.254.2.19
+Region: Bad Pyrmont / Weserbergland
+
+Sehr geehrte Damen und Herren,
+
+hiermit melde ich eine reproduzierbare, gravierende Dienstequalitätsminderung gem. § 57 TKG. Der Core-Knoten 145.254.2.19 weist unter Last massiven Bufferbloat und Tail-Drop durch unzureichendes Active Queue Management (AQM) auf.
+
+MESSREIHE (79 Zyklen, Kernel-Timestamping):
+- Lastfreie Baseline (Idle): 42,00 ms
+- Mittlere Latenz (Mean RTT): 182,95 ms (+181,5 %)
+- Latenz-Peak unter Last: 1845,331 ms (Faktor 30 über RFC 8290)
+- Max. Paketverlust (Tail-Drop): 99,739 % (Totaler Durchsatzkollaps)
+
+VERLETZTE STANDARDS & NORMEN:
+1. IETF RFC 8290 (Queue Management): FAIL (Peak > 60 ms)
+2. IETF RFC 3168 (ECN-Signalisierung): FAIL (Verwerfung statt Markierung)
+3. TKG § 57 (Dienstequalität): FAIL (kontinuierliche Leistungsabweichung)
+
+Die Messdaten, Zeitreihen-SVGs und der maschinenlesbare Audit-Report (JSON) sind öffentlich hinterlegt:
+Web-Dashboard: https://kiliajnscharf-ai.github.io/carrier-telemetry-audit/
+Rohdaten: https://raw.githubusercontent.com/kiliajnscharf-ai/carrier-telemetry-audit/main/core_node_latency.csv
+
+INFRASTRUKTUR-MASSNAHME:
+Der Engpass erfordert die Aktivierung von FQ-CoDel/CAKE am Aggregationspunkt sowie die Prüfung einer Standorterweiterung (Vantage Towers SGM 35, 10G Backhaul).
+
+Der Vorgang liegt der Bundesnetzagentur zur Prüfung vor. Ich bitte um Vergabe einer Ticket-ID und Weiterleitung an das 3rd-Level Core-NOC.
