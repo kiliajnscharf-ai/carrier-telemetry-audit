@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><title>Carrier Telemetry & Infrastructure Audit</title>
+<style>
+body { font-family: monospace; background: #0d1117; color: #c9d1d9; padding: 20px; }
+h1 { color: #58a6ff; font-size: 20px; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+th, td { border: 1px solid #30363d; padding: 8px 12px; text-align: left; }
+th { background: #161b22; color: #58a6ff; }
+.crit { color: #f85149; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT</h1>
+<p>Knoten: 145.254.2.19 (Vodafone AS3209) | Region: Bad Pyrmont | Vorgabe: RFC 8290, RFC 3168</p>
+<p>Messzyklen: <b>79</b> | Mittlere RTT: <b>349.55 ms</b> | Peak: <span class="crit">2795.43 ms</span> | Max Drop: <span class="crit">1845.3 %</span></p>
+
+<h2>VANTAGE TOWERS STANDORT-SPEZIFIKATION</h2>
+<table>
+<tr><th>Komponente</th><th>Vantage Towers Standard</th><th>Projektierung Bad Pyrmont</th></tr>
+<tr><td>Masttyp</td><td>Stahlgitter (SGM 35) / Schleuderbeton</td><td>Freistehend, 30-35 m Bauhoehe</td></tr>
+<tr><td>Fundament</td><td>Flach-/Tiefgruendung (~25 qm)</td><td>Minimale Versiegelung, Windlastzone 2</td></tr>
+<tr><td>Sektoren</td><td>3 Sektoren (120-Grad-Teilung)</td><td>Vollstaendige topografische Ausleuchtung</td></tr>
+<tr><td>Backhaul</td><td>10 Gbit/s E-Band / Dark Fiber</td><td>Beseitigung unregulierter FIFO-Pufferstaus</td></tr>
+<tr><td>AQM-Vorgabe</td><td>RFC 8290 (FQ-CoDel / CAKE)</td><td>Latenzstabilisierung unter Last</td></tr>
+</table>
+</body></html>
