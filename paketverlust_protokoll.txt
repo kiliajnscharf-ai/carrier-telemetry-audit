@@ -1,0 +1,11 @@
+VODAFONE CORE-NODE 145.254.2.19 - TAIL-DROP & BUFFERBLOAT CHRONIK:
+----------------------------------------------------------------------
+06:03:18 | Loss: 10% | Max-RTT:  464.00 ms | Pufferstau
+06:31:05 | Loss: 30% | Max-RTT:  330.79 ms | Puffer voll + Drop
+11:36:06 | Loss: 20% | Max-RTT:  574.80 ms | Mittags-Peak
+12:00:50 | Loss: 30% | Max-RTT: 2795.43 ms | Kritischer Queue-Kollaps (~2,8s)
+12:34:00 | Loss: 90% | Max-RTT:  214.42 ms | Beinahe-Totalausfall (Carrier-Drop)
+13:53:47 | Loss: 30% | Max-RTT:  442.20 ms | Anhaltende Überlast
+14:32:06 | Loss: 40% | Max-RTT: 1047.95 ms | Sekundenstau + Drop
+----------------------------------------------------------------------
+Fazit: Klares Versagen des Queue-Managements (AQM/FQ-CoDel fehlt).

@@ -1,0 +1,14 @@
+======================================================================
+   BENCHMARK: VODAFONE CORE (IST) VS. POLNISCHER STANDARD (SOLL)
+======================================================================
+Metrik                 Vodafone Node (145.254.2.19)   Soll-Standard (AQM)
+----------------------------------------------------------------------
+Baseline-Latenz        42.28 ms                       < 25.00 ms
+Median-Latenz (p50)    129.80 ms                      < 30.00 ms
+95. Perzentil (p95)    1047.95 ms                     < 35.00 ms
+Absoluter Peak         2795.43 ms                     < 45.00 ms
+Max. Paketverlust      90.0 % (Tail-Drop)             0.0 %
+Queue-Algorithmus      Legacy FIFO (ungefiltert)      FQ-CoDel / CAKE
+======================================================================
+Fazit: Der deutsche Core-Knoten operiert um den Faktor 30 ausserhalb
+moderner europaeischer Netzwerkstandards.

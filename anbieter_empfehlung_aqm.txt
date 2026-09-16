@@ -1,0 +1,23 @@
+TECHNISCHE STELLUNGNAHME: BEHEBUNG VON BUFFERBLOAT AM CORE-INTERFACE
+Betroffener Knoten: 145.254.2.19 (Vodafone Core Routing)
+
+Problemstellung:
+Die Latenzmessungen belegen chronischen Bufferbloat mit p95-Latenzen von
+ueber 1000 ms und Spitzenwerten bis zu 2795 ms bei bis zu 90 % Tail-Drop.
+
+Ursachenanalyse:
+Verwendung unregulierter FIFO-Puffer ohne aktives Warteschlangenmanagement.
+
+Empfohlene Konfigurationsanpassungen nach europaeischem Standard:
+1. Aktivierung von Active Queue Management (AQM):
+   - Implementierung von FQ-CoDel oder CAKE auf dem betroffenen Interface.
+2. Pufferbegrenzung (Buffer Sizing):
+   - Reduktion des Puffer-Limits auf maximal das 1- bis 1,5-fache des BDP
+     (Bandwidth-Delay-Product).
+3. Explicit Congestion Notification (ECN):
+   - Aktivierung von ECN-Marking zur fruehzeitigen Drosselung von TCP-Sendern
+     vor Auftreten von physischem Paketverlust.
+
+Erwartetes Ergebnis:
+- Latenz unter Volllast sinkt von > 1000 ms auf < 35 ms.
+- Eliminierung von unkontrollierten Tail-Drops im Kernnetz.

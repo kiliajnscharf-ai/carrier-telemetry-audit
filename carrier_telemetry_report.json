@@ -1,0 +1,22 @@
+{
+  "carrier_audit_standard": "v1.0-carrier-telemetry",
+  "target_core_node": "145.254.2.19",
+  "timestamp_utc": "2026-09-16T16:21:06.386213Z",
+  "sample_size": 48,
+  "metrics": {
+    "latency_baseline_ms": 42.28,
+    "latency_mean_ms": 343.53,
+    "latency_p50_ms": 147.92,
+    "latency_p90_ms": 841.11,
+    "latency_p95_ms": 1122.47,
+    "latency_max_ms": 2795.43
+  },
+  "reliability": {
+    "loss_events_ratio": 0.1875,
+    "max_packet_loss_percent": 90.0
+  },
+  "noc_recommendation": {
+    "condition": "CRITICAL_BUFFERBLOAT",
+    "action_required": "Deploy AQM (FQ-CoDel/CAKE) and configure BDP buffer sizing"
+  }
+}
