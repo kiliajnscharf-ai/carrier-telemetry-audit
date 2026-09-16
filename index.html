@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8"><title>Carrier Telemetry & Infrastructure Audit</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrier Telemetry & Infrastructure Audit</title>
 <style>
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0d1117; color: #c9d1d9; padding: 24px; max-width: 900px; margin: 0 auto; }
-h1 { color: #58a6ff; font-size: 22px; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
-h2 { color: #f0f6fc; font-size: 16px; margin-top: 24px; border-bottom: 1px solid #21262d; padding-bottom: 4px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
-.card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px; }
-.label { font-size: 11px; color: #8b949e; text-transform: uppercase; font-weight: bold; }
-.val { font-size: 20px; font-weight: bold; color: #58a6ff; margin-top: 4px; }
-.crit { color: #f85149; }
-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; }
-th, td { border: 1px solid #30363d; padding: 8px 12px; text-align: left; }
-th { background: #161b22; color: #58a6ff; }
-pre { background: #161b22; border: 1px solid #30363d; padding: 12px; border-radius: 6px; font-size: 12px; color: #79c0ff; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0d1117; color: #c9d1d9; padding: 24px; max-width: 960px; margin: 0 auto; line-height: 1.4; }
+  h1 { color: #58a6ff; font-size: 22px; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 8px; }
+  h2 { color: #f0f6fc; font-size: 16px; margin-top: 24px; border-bottom: 1px solid #21262d; padding-bottom: 4px; }
+  .meta-bar { font-size: 13px; color: #8b949e; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
+  .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px; }
+  .label { font-size: 11px; color: #8b949e; text-transform: uppercase; font-weight: bold; }
+  .val { font-size: 20px; font-weight: bold; color: #58a6ff; margin-top: 4px; }
+  .crit { color: #f85149; }
+  .alert-banner { background: rgba(218,54,51,0.15); border: 1px solid #da3633; color: #f85149; padding: 10px 14px; border-radius: 6px; font-weight: bold; margin-bottom: 16px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; background: #161b22; border-radius: 6px; overflow: hidden; border: 1px solid #30363d; }
+  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #30363d; }
+  th { background: #21262d; color: #58a6ff; }
+  pre { background: #161b22; border: 1px solid #30363d; padding: 12px; border-radius: 6px; font-size: 12px; color: #79c0ff; }
 </style>
 </head>
 <body>
 <h1>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT</h1>
-<p>Knoten: <b>145.254.2.19</b> (Vodafone AS3209) | Region: Bad Pyrmont | Vorgabe: RFC 8290, RFC 3168</p>
+<div class="meta-bar">
+  Zielknoten: <b>145.254.2.19</b> (Vodafone Deutschland (AS3209)) &bull; Region: <b>Bad Pyrmont / Weserbergland</b> &bull; Status: <b>FAIL</b>
+</div>
+
+<div class="alert-banner">
+  AUDIT-URTEIL: NON-COMPLIANT &bull; Verstoesse gegen RFC 8290, RFC 3168 und § 57 TKG messtechnisch belegt.
+</div>
 
 <div class="grid">
   <div class="card"><div class="label">Messzyklen</div><div class="val">79</div></div>
   <div class="card"><div class="label">Mittlere RTT</div><div class="val">182.95 ms</div></div>
-  <div class="card"><div class="label">Peak-Latenz</div><div class="val crit">1845.3 ms</div></div>
-  <div class="card"><div class="label">Max. Tail-Drop</div><div class="val crit">99.7 %</div></div>
+  <div class="card"><div class="label">Peak-Latenz</div><div class="val crit">1845.331 ms</div></div>
+  <div class="card"><div class="label">Max. Tail-Drop</div><div class="val crit">99.739%</div></div>
 </div>
 
-<h2>ECHTZEIT-LATENZVERLAUF (LETZTE ZYKLEN)</h2>
+<h2>IETF- & BNETZA-KONFORMITÄTSMATRIX (COMPLIANCE AUDIT)</h2>
+<table>
+  <tr><th>Standard / Rechtsnorm</th><th>Pruefparameter</th><th>Soll-Grenzwert</th><th>Ist-Messwert</th><th>Urteil</th></tr>
+  <tr>
+      <td><b>IETF RFC 8290 (Queue Management / CAKE / FQ-CoDel)</b></td>
+      <td>Peak RTT under load</td>
+      <td><= 60.0 ms</td>
+      <td><b>1845.331 ms</b></td>
+      <td><span style="background:#da3633;color:#fff;padding:2px 8px;border-radius:4px;font-weight:bold;font-size:11px;">FAIL</span></td>
+    </tr><tr>
+      <td><b>IETF RFC 3168 (Explicit Congestion Notification)</b></td>
+      <td>Tail-Drop Packet Loss</td>
+      <td><= 1.0 %</td>
+      <td><b>99.739 %</b></td>
+      <td><span style="background:#da3633;color:#fff;padding:2px 8px;border-radius:4px;font-weight:bold;font-size:11px;">FAIL</span></td>
+    </tr><tr>
+      <td><b>TKG § 57 (Dienstequalitaet & Regulierungsanforderung)</b></td>
+      <td>Average RTT Degradation</td>
+      <td><= 65.0 ms</td>
+      <td><b>182.95 ms</b></td>
+      <td><span style="background:#da3633;color:#fff;padding:2px 8px;border-radius:4px;font-weight:bold;font-size:11px;">FAIL</span></td>
+    </tr>
+</table>
 
-<svg width="100%" height="200" viewBox="0 0 700 180" style="background:#161b22;border:1px solid #30363d;border-radius:6px;">
-  <line x1="20" y1="155" x2="680" y2="155" stroke="#30363d" stroke-width="1"/>
+<h2>ECHTZEIT-LATENZVERLAUF (LETZTE ZYKLEN)</h2>
+<svg width="100%" height="160" viewBox="0 0 700 160" style="background:#161b22;border:1px solid #30363d;border-radius:6px;">
+  <line x1="20" y1="135" x2="680" y2="135" stroke="#30363d" stroke-width="1"/>
   <line x1="20" y1="25" x2="680" y2="25" stroke="#f85149" stroke-dasharray="4" stroke-width="1"/>
   <text x="25" y="20" fill="#f85149" font-size="10" font-family="monospace">Bufferbloat Peak: 1845.3 ms</text>
-  <text x="25" y="170" fill="#238636" font-size="10" font-family="monospace">Baseline Target: ~42.0 ms</text>
-  <polyline fill="none" stroke="#58a6ff" stroke-width="2" points="20,146 36,129 53,148 70,144 87,150 104,142 121,114 138,138 155,145 172,144 189,146 206,144 223,143 240,143 256,144 273,148 290,144 307,141 324,123 341,144 358,147 375,133 392,145 409,146 426,137 443,145 460,150 476,150 493,146 510,138 527,141 544,148 561,148 578,141 595,150 612,145 629,145 646,137 663,143 680,146" />
+  <text x="25" y="150" fill="#238636" font-size="10" font-family="monospace">Baseline Target: 42.0 ms</text>
+  <polyline fill="none" stroke="#58a6ff" stroke-width="2" points="20,127 36,113 53,129 70,126 87,131 104,124 121,100 138,120 155,127 172,126 189,127 206,126 223,125 240,124 256,126 273,129 290,125 307,123 324,108 341,125 358,128 375,116 392,127 409,127 426,119 443,126 460,130 476,130 493,127 510,120 527,123 544,129 561,129 578,123 595,131 612,126 629,126 646,119 663,125 680,128" />
 </svg>
-
 
 <h2>VANTAGE TOWERS STANDORT-SPEZIFIKATION</h2>
 <table>
@@ -48,9 +80,4 @@ pre { background: #161b22; border: 1px solid #30363d; padding: 12px; border-radi
 <tr><td>Backhaul</td><td>10 Gbit/s E-Band / Dark Fiber</td><td>Beseitigung unregulierter FIFO-Pufferstaus</td></tr>
 <tr><td>AQM-Vorgabe</td><td>RFC 8290 (FQ-CoDel / CAKE)</td><td>Latenzstabilisierung unter Last</td></tr>
 </table>
-
-<h2>STANDORTPROFIL (SITE CANDIDATE DOSSIER)</h2>
-<pre>Region: Bad Pyrmont (Weserbergland)
-Kandidatentyp: Greenfield / Rooftop Tower
-Kollokationsfaehigkeit: Multi-Operator-Ready (Vodafone, Deutsche Telekom, O2 Telefónica, 1&1)</pre>
 </body></html>
