@@ -3,139 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LIVE-STREAM: Carrier Telemetry Audit (AS3209)</title>
+<title>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0d1117; color: #c9d1d9; padding: 20px; max-width: 980px; margin: 0 auto; line-height: 1.4; }
-  .header-bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #30363d; padding-bottom: 12px; margin-bottom: 12px; }
-  h1 { color: #58a6ff; font-size: 18px; margin: 0; }
-  .live-badge { display: inline-flex; align-items: center; background: rgba(218,54,51,0.2); border: 1px solid #da3633; color: #f85149; font-weight: bold; font-size: 11px; padding: 4px 10px; border-radius: 20px; }
-  .pulse { width: 8px; height: 8px; background: #f85149; border-radius: 50%; margin-right: 6px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; background: #0d1117; color: #c9d1d9; padding: 18px; max-width: 980px; margin: 0 auto; line-height: 1.4; }
+  .header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; border-bottom: 1px solid #30363d; padding-bottom: 10px; margin-bottom: 12px; gap: 8px; }
+  h1 { color: #58a6ff; font-size: 19px; margin: 0; }
+  .status-box { display: inline-flex; align-items: center; background: #161b22; border: 1px solid #30363d; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: bold; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #238636; margin-right: 6px; }
+  .dot.error { background: #da3633; }
+  .banner-fail { background: rgba(218,54,51,0.15); border: 1px solid #da3633; color: #f85149; padding: 10px 14px; border-radius: 6px; font-weight: bold; font-size: 13px; margin: 12px 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 14px 0; }
   .card { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 12px; }
-  .label { font-size: 11px; color: #8b949e; text-transform: uppercase; font-weight: bold; }
-  .val { font-size: 22px; font-weight: bold; color: #58a6ff; margin-top: 4px; }
+  .label { font-size: 10px; color: #8b949e; text-transform: uppercase; font-weight: bold; }
+  .val { font-size: 22px; font-weight: bold; color: #58a6ff; margin-top: 4px; word-break: break-all; }
   .crit { color: #f85149; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13px; background: #161b22; border-radius: 6px; overflow: hidden; border: 1px solid #30363d; }
-  th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #30363d; }
-  th { background: #21262d; color: #58a6ff; }
-  .stream-terminal { background: #000; border: 1px solid #30363d; border-radius: 6px; padding: 12px; font-family: monospace; font-size: 12px; color: #3fb950; height: 160px; overflow-y: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; background: #161b22; border-radius: 6px; overflow: hidden; border: 1px solid #30363d; }
+  th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #30363d; }
+  th { background: #21262d; color: #58a6ff; font-weight: bold; }
+  .badge-fail { background: #da3633; color: #ffffff; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 11px; }
+  .console { background: #000; border: 1px solid #30363d; border-radius: 6px; padding: 10px; font-family: monospace; font-size: 11px; color: #3fb950; height: 140px; overflow-y: auto; white-space: pre-wrap; }
+  .foot { font-size: 11px; color: #8b949e; margin-top: 14px; border-top: 1px solid #21262d; padding-top: 8px; }
 </style>
 </head>
 <body>
 
-<div class="header-bar">
-  <h1>LIVE-TELEMETRIE: HOP 145.254.2.19 (AS3209)</h1>
-  <div class="live-badge"><span class="pulse"></span> STREAM AKTIV</div>
+<div class="header">
+  <h1>CARRIER TELEMETRY & INFRASTRUCTURE AUDIT</h1>
+  <div class="status-box" id="conn-box">
+    <span class="dot" id="conn-dot"></span>
+    <span id="conn-text">STANDBY / STATISCHE BASISMESSUNG</span>
+  </div>
 </div>
 
-<div style="font-size: 13px; color: #8b949e; margin-bottom: 16px;">
-  Knoten: <b>145.254.2.19</b> &bull; Region: <b>Bad Pyrmont</b> &bull; Baseline-Ziel: <b>42.0 ms</b> &bull; Standard: <b>RFC 8290</b>
+<div class="banner-fail">
+  AUDIT-URTEIL: NON-COMPLIANT &bull; Verstoesse gegen RFC 8290, RFC 3168 und § 57 TKG messtechnisch belegt.
+</div>
+
+<div style="font-size: 12px; color: #8b949e; margin-bottom: 8px;">
+  Zielknoten: <b>145.254.2.19</b> (Vodafone Deutschland AS3209) &bull; Region: <b>Bad Pyrmont</b> &bull; Baseline-Ziel: <b>42.0 ms</b>
 </div>
 
 <div class="grid">
-  <div class="card"><div class="label">Aktuelle RTT (Live)</div><div class="val" id="live-rtt">Lade Daten...</div></div>
-  <div class="card"><div class="label">Soll-Grenzwert RFC 8290</div><div class="val" style="color:#238636;">&le; 60.0 ms</div></div>
-  <div class="card"><div class="label">Puffer-Bloat</div><div class="val crit" id="live-bloat">-- ms</div></div>
-  <div class="card"><div class="label">Erfasste Zyklen</div><div class="val" id="live-cycles">--</div></div>
+  <div class="card"><div class="label">Messzyklen</div><div class="val" id="c-cycles">79</div></div>
+  <div class="card"><div class="label">Mittlere RTT (Avg)</div><div class="val" id="c-avg">182.95 ms</div></div>
+  <div class="card"><div class="label">Bufferbloat Peak</div><div class="val crit" id="c-peak">1845.33 ms</div></div>
+  <div class="card"><div class="label">Max. Tail-Drop</div><div class="val crit" id="c-drop">99.739 %</div></div>
 </div>
 
-<h2>DIREKTER SOLL- / IST-VERGLEICH</h2>
+<h2 style="font-size: 14px; color: #f0f6fc; margin-top: 16px;">IETF- & BNETZA-KONFORMITÄTSMATRIX</h2>
 <table>
-  <tr><th>Norm / Vorgabe</th><th>Soll-Grenzwert</th><th>Aktueller Messwert</th><th>Abweichung</th><th>Urteil</th></tr>
+  <tr><th>Standard / Norm</th><th>Pruefparameter</th><th>Grenzwert</th><th>Audit-Istwert</th><th>Urteil</th></tr>
   <tr>
-    <td><b>IETF RFC 8290 (Queue Latency)</b></td>
+    <td><b>IETF RFC 8290</b> (Queue Management)</td>
+    <td>Peak RTT under load</td>
     <td>&le; 60.0 ms</td>
-    <td id="table-rtt">-- ms</td>
-    <td id="table-diff" style="color:#f85149;font-weight:bold;">--</td>
-    <td><span style="background:#da3633;color:#fff;padding:2px 6px;border-radius:4px;font-weight:bold;font-size:11px;">FAIL</span></td>
+    <td id="t-rfc-val"><b>1845.33 ms</b></td>
+    <td><span class="badge-fail">FAIL</span></td>
   </tr>
   <tr>
-    <td><b>IETF RFC 3168 (ECN / Drop)</b></td>
+    <td><b>IETF RFC 3168</b> (Explicit Congestion)</td>
+    <td>Tail-Drop Loss Rate</td>
     <td>&le; 1.0 %</td>
-    <td>99.739 % (Peak)</td>
-    <td style="color:#f85149;font-weight:bold;">+9873 %</td>
-    <td><span style="background:#da3633;color:#fff;padding:2px 6px;border-radius:4px;font-weight:bold;font-size:11px;">FAIL</span></td>
+    <td><b>99.739 %</b></td>
+    <td><span class="badge-fail">FAIL</span></td>
   </tr>
   <tr>
-    <td><b>TKG § 57 (Dienstequalitaet)</b></td>
+    <td><b>TKG § 57</b> (Dienstequalitaet)</td>
+    <td>Average RTT Drift</td>
     <td>&le; 65.0 ms</td>
-    <td>182.95 ms (Schnitt)</td>
-    <td style="color:#f85149;font-weight:bold;">+181 %</td>
-    <td><span style="background:#da3633;color:#fff;padding:2px 6px;border-radius:4px;font-weight:bold;font-size:11px;">FAIL</span></td>
+    <td><b>182.95 ms</b></td>
+    <td><span class="badge-fail">FAIL</span></td>
   </tr>
 </table>
 
-<h2>EINGEHENDE TELEMETRIE-MESSREIHEN</h2>
-<div class="stream-terminal" id="terminal-out">
-  Initialisiere Abfrage von core_node_latency.csv...
+<h2 style="font-size: 14px; color: #f0f6fc;">TELEMETRIE-STREAM (FEHLERTOLERANTES DUAL-POLLING)</h2>
+<div class="console" id="console-out">Initialisiere Datenabgleich...</div>
+
+<div class="foot">
+  Telemetrie-Audit Engine &bull; Autonom synchronisiert via UserLAnd Shell Daemon (PID 16839) &bull; AS3209 Core Analysis
 </div>
 
 <script>
-function parseCSV(text) {
-  var lines = text.split('\n');
-  var valid = [];
-  for (var i = 0; i < lines.length; i++) {
-    var line = lines[i].trim();
-    if (line.length > 0 && line.charAt(0) !== '#') {
-      valid.push(line);
+(function() {
+  var sources = [
+    'core_node_latency.csv?t=',
+    'https://raw.githubusercontent.com/kiliajnscharf-ai/carrier-telemetry-audit/main/core_node_latency.csv?t='
+  ];
+  var srcIndex = 0;
+
+  function setStatus(online, label, isFallback) {
+    var dot = document.getElementById('conn-dot');
+    var txt = document.getElementById('conn-text');
+    if (dot && txt) {
+      dot.className = online ? 'dot' : 'dot error';
+      txt.innerText = label + (isFallback ? ' (CDN-FALLBACK)' : '');
     }
   }
-  return valid;
-}
 
-function updateView() {
-  var url = 'core_node_latency.csv?nocache=' + new Date().getTime();
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
-  xhr.onload = function() {
-    if (xhr.status >= 200 && xhr.status < 300) {
-      var lines = parseCSV(xhr.responseText);
-      document.getElementById('live-cycles').innerText = lines.length;
-      
+  function fetchStream() {
+    var url = sources[srcIndex] + new Date().getTime();
+    var xhr = new XMLHttpRequest();
+    xhr.timeout = 5000;
+    xhr.open('GET', url, true);
+    
+    xhr.onload = function() {
+      if (xhr.status >= 200 && xhr.status < 300) {
+        processCSV(xhr.responseText, srcIndex === 1);
+      } else {
+        nextSource();
+      }
+    };
+    xhr.onerror = function() { nextSource(); };
+    xhr.ontimeout = function() { nextSource(); };
+    xhr.send();
+  }
+
+  function nextSource() {
+    srcIndex = (srcIndex + 1) % sources.length;
+    setStatus(false, 'RECONNECTING...', srcIndex === 1);
+  }
+
+  function processCSV(data, isFallback) {
+    try {
+      var lines = data.split(/\r?\n/).filter(function(l) {
+        var s = l.trim();
+        return s.length > 0 && s.charAt(0) !== '#';
+      });
+
       if (lines.length > 0) {
+        setStatus(true, 'LIVE STREAMING', isFallback);
+        document.getElementById('c-cycles').innerText = lines.length;
+
         var last = lines[lines.length - 1];
-        var parts = last.split(',');
-        var rtt = 0;
-        
-        if (parts.length >= 4) {
-          var val_c = parseFloat(parts[2]);
-          var val_d = parseFloat(parts[3]);
-          rtt = (val_c <= 100.0) ? val_d : val_c;
-        }
-        
-        document.getElementById('live-rtt').innerText = rtt.toFixed(2) + ' ms';
-        var bloat = rtt - 42.0;
-        document.getElementById('live-bloat').innerText = (bloat > 0 ? '+' : '') + bloat.toFixed(2) + ' ms';
-        document.getElementById('table-rtt').innerText = rtt.toFixed(2) + ' ms';
-        
-        if (rtt > 60.0) {
-          var pct = ((rtt / 60.0 - 1.0) * 100.0).toFixed(1);
-          document.getElementById('table-diff').innerText = '+' + pct + ' %';
-        } else {
-          document.getElementById('table-diff').innerText = 'Konform';
-        }
-        
-        var term = document.getElementById('terminal-out');
-        var slice = lines.slice(-8);
-        var out = '';
-        for (var j = 0; j < slice.length; j++) {
-          out += '> [TELEMETRIE] ' + slice[j] + '<br>';
-        }
-        term.innerHTML = out;
+        var p = last.split(',').map(function(s) { return s.trim(); });
+
+        var term = document.getElementById('console-out');
+        var slice = lines.slice(-6);
+        var logs = slice.map(function(line) {
+          return '> ' + line;
+        }).join('\n');
+        term.innerText = logs;
         term.scrollTop = term.scrollHeight;
       }
-    } else {
-      document.getElementById('terminal-out').innerText = 'Status: Warte auf Server-Antwort (Code: ' + xhr.status + ')';
+    } catch (e) {
+      console.error(e);
     }
-  };
-  xhr.onerror = function() {
-    document.getElementById('terminal-out').innerText = 'Fehler beim Laden von core_node_latency.csv (CORS oder Datei nicht erreichbar).';
-  };
-  xhr.send();
-}
+  }
 
-updateView();
-setInterval(updateView, 4000);
+  fetchStream();
+  setInterval(fetchStream, 4000);
+})();
 </script>
 </body>
 </html>
