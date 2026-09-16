@@ -1,0 +1,29 @@
+{
+  "project": "Carrier Infrastructure Expansion & AQM Audit",
+  "target_node": "145.254.2.19",
+  "as_number": "AS3209",
+  "region": "Bad Pyrmont / Weserbergland",
+  "structure_recommendation": {
+    "mast_type": "Standard Gittermast (SGM 35) / Schleuderbeton",
+    "height_m": 35,
+    "wind_zone": "Zone 2",
+    "sectors": 3,
+    "azimuth_deg": [
+      0,
+      120,
+      240
+    ],
+    "backhaul_type": "10 Gbps E-Band Richtfunk / Dark Fiber",
+    "colocation_ready": true,
+    "operators": [
+      "Vodafone",
+      "Deutsche Telekom",
+      "Telef\u00f3nica O2",
+      "1&1"
+    ]
+  },
+  "traffic_policy_requirements": {
+    "aqm_standard": "RFC 8290 (FQ-CoDel / CAKE)",
+    "ecn_signaling": "RFC 3168"
+  }
+}
