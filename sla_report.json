@@ -1,0 +1,48 @@
+{
+  "audit_meta": {
+    "timestamp_utc": "2026-09-16T18:39:39.694674Z",
+    "target_node": "145.254.2.19",
+    "target_carrier": "Vodafone Deutschland (AS3209)",
+    "location_context": "Bad Pyrmont / Weserbergland",
+    "overall_verdict": "FAIL"
+  },
+  "telemetry_summary": {
+    "total_cycles_analyzed": 79,
+    "baseline_idle_target_ms": 42.0,
+    "average_rtt_ms": 182.95,
+    "percentile_95_rtt_ms": 446.57,
+    "peak_rtt_ms": 1845.331,
+    "peak_tail_drop_percent": 99.739
+  },
+  "compliance_matrix": {
+    "rfc8290_bufferbloat": {
+      "name": "IETF RFC 8290 (Queue Management / CAKE / FQ-CoDel)",
+      "metric": "Peak RTT under load",
+      "threshold": "<= 60.0 ms",
+      "measured": "1845.331 ms",
+      "status": "FAIL",
+      "impact": "Unkontrollierter FIFO-Pufferstau im Backbone"
+    },
+    "rfc3168_congestion_signaling": {
+      "name": "IETF RFC 3168 (Explicit Congestion Notification)",
+      "metric": "Tail-Drop Packet Loss",
+      "threshold": "<= 1.0 %",
+      "measured": "99.739 %",
+      "status": "FAIL",
+      "impact": "Verwerfung statt ECN-Markierung bei Queue-Overflow"
+    },
+    "tkg_57_service_quality": {
+      "name": "TKG \u00a7 57 (Dienstequalitaet & Regulierungsanforderung)",
+      "metric": "Average RTT Degradation",
+      "threshold": "<= 65.0 ms",
+      "measured": "182.95 ms",
+      "status": "FAIL",
+      "impact": "Erhebliche, kontinuierliche Leistungsabweichung"
+    }
+  },
+  "infrastructure_remedy": {
+    "action_required": "Site expansion & AQM deployment",
+    "recommended_site": "Vantage Towers SGM 35 / SBM 30 (Bad Pyrmont)",
+    "transport_fix": "10 Gbps E-Band Richtfunk / Dark Fiber Backhaul mit FQ-CoDel"
+  }
+}
