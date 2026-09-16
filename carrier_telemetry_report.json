@@ -1,7 +1,7 @@
 {
   "carrier_audit_standard": "v1.0-carrier-telemetry",
   "target_core_node": "145.254.2.19",
-  "timestamp_utc": "2026-09-16T18:53:03.570366Z",
+  "timestamp_utc": "2026-09-16T19:06:53.787487Z",
   "sample_size": 79,
   "metrics": {
     "latency_baseline_ms": 42.28,
