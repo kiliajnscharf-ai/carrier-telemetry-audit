@@ -1,0 +1,14 @@
+AUTOMATISIERTES TELEMETRIE-UPDATE (STAND: 2026-09-16 16:45:21 UTC)
+Zielknoten: 145.254.2.19 (Vodafone Core AS3209)
+Messbasis: 58 Zyklen (Langzeit-Monitoring)
+
+Aktuelle Core-Latenzen:
+- Baseline: 42.28 ms
+- Median (p50): 159.52 ms
+- 90. Perzentil (p90): 773.96 ms
+- 95. Perzentil (p95): 1122.47 ms
+- Maximaler Peak: 2795.43 ms
+- Paketverlust-Ereignisse: 18.97 % aller Zyklen (Peak: 90.0 % Tail-Drop)
+
+Status: CRITICAL_BUFFERBLOAT
+Handlungsempfehlung NOC: Deployment von AQM (FQ-CoDel/CAKE) gemaess RFC 8290.
