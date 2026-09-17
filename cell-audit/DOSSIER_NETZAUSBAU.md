@@ -27,3 +27,10 @@ Durch die topografische Lage und die extreme Distanz treten massive Übertragung
 
 ---
 *Erstellt auf Basis automatisierter Messreihen via cell-audit.*
+
+### Ergänzende Durchsatzmessung (17.09.2026, 11:44 Uhr Lokalzeit)
+- **Download:** 1,27 Mb/s (95,6% unter Bundesdurchschnitt)
+- **Upload:** 0,30 Mb/s (96,9% unter Bundesdurchschnitt)
+- **Latenz:** 63 ms
+- **Systemhinweis:** SCHWACHES SIGNAL (LTE+ / IP: 109.41.48.108)
+- **Beweisführung:** Der minimale Upload bricht interaktive Sitzungen und App-Verbindungen reproduzierbar ab.
