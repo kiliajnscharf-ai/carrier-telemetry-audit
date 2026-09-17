@@ -34,3 +34,13 @@ Durch die topografische Lage und die extreme Distanz treten massive Übertragung
 - **Latenz:** 63 ms
 - **Systemhinweis:** SCHWACHES SIGNAL (LTE+ / IP: 109.41.48.108)
 - **Beweisführung:** Der minimale Upload bricht interaktive Sitzungen und App-Verbindungen reproduzierbar ab.
+
+## Jitter- und Latenzprofil (Relevanz fuer Digitalisierungsstandards)
+Die Auswertung von 19 konsekutiven Messpunkten dokumentiert ein extremes Latenzdelta:
+- Minimale Latenz: 44.78 ms
+- Maximale Latenz: 615.93 ms
+- Durchschnittliche Latenz: 141.97 ms
+- Mittlerer Jitter: 101.26 ms
+
+Bewertung:
+Ein mittlerer Jitter von ueber 100 ms verhindert die zuverlaessige Nutzung digitaler Grunddienste gemaess TKG (Telearbeit, Sprachkommunikation, Cloud-Anbindung). Der Standort benoetigt zwingend eine lokale Zelle.
