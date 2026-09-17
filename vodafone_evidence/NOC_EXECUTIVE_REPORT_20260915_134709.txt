@@ -1,0 +1,25 @@
+======================================================================
+ OFFZIELLER NOC-PRÜFBERICHT: PERFORMANCE-AUDIT AS3209
+ Datum: 2026-09-15 13:48:25
+ Untersuchte Kernnetzknoten: 145.254.2.19 (Vodafone Core Backbone)
+======================================================================
+
+1. BACKBONE LATENZ- & BUFFERBLOAT-ANALYSE
+   - Core-Node (145.254.2.19)  : Min: 43.20 ms | Avg: 72.04 ms | Max: 230.00 ms
+   - Referenz-Transit (8.8.8.8): Min: 44.00 ms | Avg: 82.10 ms | Max: 226.00 ms
+   - Kritische Peaks (>100 ms) : 2 Vorfälle in 20 Zyklen
+   - Jitter-Delta Core-Router  : 186.80 ms
+
+2. LAYER-7 VERBINDUNGSPHASEN (Cloudflare Edge)
+   - DNS Lookup Time           : 0.3598 s
+   - TCP SYN/ACK Connect       : 0.4134 s
+   - TLS Handshake Negotiation : 0.6183 s
+   - Time to First Byte (TTFB) : 0.7099 s
+   - Gesamtlaufzeit Transaktion: 2.3552 s
+
+3. SYSTEMBEWERTUNG & FAZIT
+   [STATUS: KRITISCH] Das Core-Interface 145.254.2.19 leidet unter
+   nachweisbarem Pufferstau (Bufferbloat) und akuter Instabilität.
+   Dringende Empfehlung: Traffic-Engineering im AS3209 anpassen,
+   BGP-Metriken re-evaluieren und Active Queue Management (CoDel/FQ) aktivieren.
+======================================================================

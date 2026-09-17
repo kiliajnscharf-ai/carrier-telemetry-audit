@@ -1,0 +1,25 @@
+======================================================================
+ VODAFONE AS3209 CORE ENGINEERING - RECOMMENDED REMEDIATION TEMPLATE
+ AFFECTED HOP: 145.254.2.19 (Vodafone Core Backbone)
+======================================================================
+
+Option A: Cisco IOS-XR / ASR 9000 Series (Queue Mitigation)
+----------------------------------------------------------------------
+policy-map AS3209-CORE-AQM-REMEDY
+ class class-default
+  queue-limit 15 ms
+  random-detect ecn
+  random-detect default 20 ms 50 ms
+!
+interface TenGigE/HundredGigE [Target-Interface-145.254.2.19]
+ service-policy output AS3209-CORE-AQM-REMEDY
+commit
+
+Option B: Juniper JunOS (Active Queue Management / RED)
+----------------------------------------------------------------------
+set class-of-service drop-profiles AS3209-CORE-DROP interpolate fill-level 40 drop-probability 5
+set class-of-service drop-profiles AS3209-CORE-DROP interpolate fill-level 80 drop-probability 100
+set class-of-service schedulers AS3209-SCHEDULER buffer-size temporal 15k
+set class-of-service schedulers AS3209-SCHEDULER drop-profile-map loss-priority any protocol any drop-profile AS3209-CORE-DROP
+commit comment "Mitigate AS3209 core queue bufferbloat on 145.254.2.19"
+======================================================================

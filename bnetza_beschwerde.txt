@@ -1,0 +1,34 @@
+Bundesnetzagentur fuer Elektrizitaet, Gas,
+Telekommunikation, Post und Eisenbahnen
+Referat Netzdienste / Dienstequalitaet Telekommunikation
+Tulpenfeld 4
+53113 Bonn
+
+Datum: 16. September 2026
+
+Betreff: Formelle Beschwerde nach Paragraph 56, 57 TKG wegen systematischer Netzueberlastung, chronischem Bufferbloat und unzureichendem Queue-Management im Core-Netz der Vodafone GmbH (AS3209)
+
+Sehr geehrte Damen und Herren,
+
+hiermit reiche ich formelle Beschwerde gegen den Telekommunikationsanbieter Vodafone GmbH bezueglich massiver, reproduzierbarer und kontinuierlicher Leistungseinschraenkungen im Mobilfunknetz ein.
+
+1. Betroffener Netzknoten & technischer Befund:
+- Betroffener Hop: 145.254.2.19 (Vodafone Core Network, AS3209)
+- Fehlerursache: Unzureichendes Warteschlangenmanagement (Legacy FIFO) ohne Active Queue Management (AQM).
+- Statistische Kennzahlen (>58 Zyklen):
+  * Baseline-RTT: ~42 ms
+  * Median (p50): ~160 ms
+  * 95. Perzentil (p95): >1.100 ms
+  * Peak-Latenz: Bis zu 2.795 ms
+  * Paketverluste (Tail-Drop): Bis zu 90,0 %
+
+2. Beweismittel:
+- Oeffentliches Repository: https://github.com/kiliajnscharf-ai/carrier-telemetry-audit
+- JSON-Report: https://raw.githubusercontent.com/kiliajnscharf-ai/carrier-telemetry-audit/main/carrier_telemetry_report.json
+- CSV-Rohdaten: https://raw.githubusercontent.com/kiliajnscharf-ai/carrier-telemetry-audit/main/core_node_latency.csv
+
+3. Regulatorische Forderung:
+Implementierung von Active Queue Management (AQM gemaess RFC 8290 / RFC 3168) am betroffenen Core-Knoten.
+
+Mit freundlichen Gruessen
+Kilian Scharf

@@ -1,0 +1,2 @@
+Start: 2026-09-15T13:38:05+0000
+HOST: localhost Loss%   Snt   Last   Avg  Best  Wrst StDev
