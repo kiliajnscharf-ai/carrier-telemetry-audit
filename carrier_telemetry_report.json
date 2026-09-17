@@ -1,18 +1,18 @@
 {
   "carrier_audit_standard": "v1.0-carrier-telemetry",
   "target_core_node": "145.254.2.19",
-  "timestamp_utc": "2026-09-16T20:57:47.730326Z",
-  "sample_size": 157,
+  "timestamp_utc": "2026-09-17T05:09:56.755669Z",
+  "sample_size": 231,
   "metrics": {
     "latency_baseline_ms": 0.0,
-    "latency_mean_ms": 275.85,
-    "latency_p50_ms": 154.86,
-    "latency_p90_ms": 622.03,
-    "latency_p95_ms": 840.1,
+    "latency_mean_ms": 207.23,
+    "latency_p50_ms": 84.54,
+    "latency_p90_ms": 562.0,
+    "latency_p95_ms": 767.93,
     "latency_max_ms": 2795.43
   },
   "reliability": {
-    "loss_events_ratio": 0.242,
+    "loss_events_ratio": 0.4545,
     "max_packet_loss_percent": 100.0
   },
   "noc_recommendation": {
