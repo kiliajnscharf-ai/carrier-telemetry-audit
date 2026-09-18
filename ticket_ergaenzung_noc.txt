@@ -1,0 +1,15 @@
+Sehr geehrtes Technik-Team,
+
+anbei reiche ich die automatisierte Perzentil-Analyse des Hops 145.254.2.19 nach. 
+Die statistische Auswertung belegt ein chronisches Queue-Problem (Bufferbloat):
+
+- Datenbasis: 19 Zyklen
+- Median (p50): 81,68 ms
+- 90. Perzentil (p90): 330,79 ms
+- 95. Perzentil (p95): 464,00 ms (Peak: 519,27 ms)
+- Anomalierate (> 100 ms): 47,4 %
+
+Aufgrund des p95-Wertes von 464 ms bitte ich um Prüfung der Queue-Disziplin (AQM/FQ-CoDel) am betroffenen Core-Interface im kommenden Wartungsfenster.
+
+Mit freundlichen Grüßen
+Kilian Scharf

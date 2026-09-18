@@ -1,0 +1,26 @@
+Sehr geehrtes Vodafone Support- und NOC-Team,
+
+zur Ergänzung des laufenden Störungstickets bezüglich der Upload-Instabilitäten und extremen Latenzspitzen im Mobilfunknetz übergebe ich hiermit das Langzeit-Telemetriedossier zur Analyse durch das Core-NOC (AS3209).
+
+Diagnose & betroffener Core-Hop:
+- Zielknoten: 145.254.2.19 (Vodafone Core Network)
+- Symptom: Chronischer Bufferbloat unter Last mit Latenzspitzen von über 2.700 ms und bis zu 90 % Paketverlust durch Tail-Drops.
+- Statistische Kennzahlen (Langzeit-Messreihe, >58 Zyklen):
+  * Baseline-RTT: ~42 ms
+  * Median (p50): ~160 ms
+  * 95. Perzentil (p95): >1.100 ms
+  * Status: CRITICAL_BUFFERBLOAT
+
+Live-Telemetrie & maschinenlesbare Feeds:
+1. Projektübersicht & Historie:
+   https://github.com/kiliajnscharf-ai/carrier-telemetry-audit
+2. Maschinenlesbarer Live-Feed (JSON):
+   https://raw.githubusercontent.com/kiliajnscharf-ai/carrier-telemetry-audit/main/carrier_telemetry_report.json
+3. Vollständige Messhistorie (CSV-Rohdaten):
+   https://raw.githubusercontent.com/kiliajnscharf-ai/carrier-telemetry-audit/main/core_node_latency.csv
+
+Lösungsempfehlung gemäß IETF-Standards:
+Konfiguration von Active Queue Management (AQM, bevorzugt FQ-CoDel oder CAKE gemäß RFC 8290) sowie Aktivierung von ECN (RFC 3168) an den überlasteten Queue-Instanzen des Core-Nodes.
+
+Mit freundlichen Grüßen
+Kilian Scharf

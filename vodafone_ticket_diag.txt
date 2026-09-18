@@ -1,0 +1,17 @@
+=== VODAFONE STÖRUNGS-DIAGNOSE ===
+Datum/Uhrzeit: 2026-09-15 10:09:54
+
+[1. LOKALE IP-KONFIGURATION]
+Cannot bind netlink socket: Permission denied
+
+[2. MTU-FRAGMENTIERUNGSTEST]
+Paketgröße 1472 Bytes: Erfolgreich (Keine Fragmentierung)
+Paketgröße 1400 Bytes: Erfolgreich (Keine Fragmentierung)
+Paketgröße 1350 Bytes: Erfolgreich (Keine Fragmentierung)
+
+[3. TRACEROUTE ROUTING-ANALYSE]
+traceroute: invalid option -- 'n'
+Try 'traceroute --help' or 'traceroute --usage' for more information.
+
+[4. LATENZ UNTER LAST]
+Ping Idle: 287.189 ms

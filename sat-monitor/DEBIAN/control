@@ -1,0 +1,8 @@
+Package: sat-monitor
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Kilian <user@example.com>
+Description: Astra 19.2E Satellite Monitoring System (WSL Compatible)
+Depends: jq, bc, v4l-utils, cron

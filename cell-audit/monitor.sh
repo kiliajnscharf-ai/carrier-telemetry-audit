@@ -1,38 +1,35 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-CSV_FILE="data/network_pings.csv"
+TARGET="8.8.8.8"
+URL="http://www.google.com"
+DATA_FILE="data/network_pings.csv"
 
-# Header anlegen, falls Datei nicht existiert
-if [ ! -f "$CSV_FILE" ]; then
-    echo "Timestamp,Host,Latency_ms,Packet_Loss_Percent,HTTP_Status" > "$CSV_FILE"
+mkdir -p data
+
+if [ ! -f "$DATA_FILE" ]; then
+    echo "Timestamp,Target,Latency_ms,Packet_Loss_Percent,HTTP_Status" > "$DATA_FILE"
 fi
-
-echo "Start der Netzwerk-Messung. Beenden mit STRG+C..."
 
 while true; do
     TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-    TARGET="8.8.8.8"
     
-    # Ping-Messung (3 Pings)
+    # 3 Pings senden und sauber mit gawk auswerten
     PING_OUTPUT=$(ping -c 3 -W 2 "$TARGET" 2>&1)
     
-    # Latenz und Packet Loss parsen
-    PACKET_LOSS=$(echo "$PING_OUTPUT" | grep -oP '\d+(?=% packet loss)')
-    LATENCY=$(echo "$PING_OUTPUT" | tail -1 | awk -F '/' '{print $5}')
+    LOSS=$(echo "$PING_OUTPUT" | grep -oP '\d+(?=% packet loss)' || echo "100")
+    AVG_LATENCY=$(echo "$PING_OUTPUT" | grep -oP '(?<=min/avg/max/mdev = )[0-9.]+' | cut -d'/' -f2)
     
-    if [ -z "$LATENCY" ]; then
-        LATENCY="TIMEOUT"
+    if [ -z "$AVG_LATENCY" ]; then
+        AVG_LATENCY="0.000"
     fi
     
-    # HTTP Check via curl
-    HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}\n" --max-time 5 https://www.google.com)
+    # HTTP Check (5s Timeout)
+    HTTP_STATUS=$(curl -o /dev/null -s -w "%{http_code}" --connect-timeout 5 "$URL")
     if [ -z "$HTTP_STATUS" ]; then
-        HTTP_STATUS="FAIL"
+        HTTP_STATUS="000"
     fi
     
-    # Zeile in CSV schreiben
-    echo "${TIMESTAMP},${TARGET},${LATENCY},${PACKET_LOSS}%,${HTTP_STATUS}" >> "$CSV_FILE"
-    echo "[${TIMESTAMP}] Ping: ${LATENCY} ms | Loss: ${PACKET_LOSS}% | HTTP: ${HTTP_STATUS}"
+    echo "$TIMESTAMP,$TARGET,$AVG_LATENCY,$LOSS%,$HTTP_STATUS" >> "$DATA_FILE"
     
     sleep 60
 done

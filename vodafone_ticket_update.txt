@@ -1,0 +1,7 @@
+MESSWERTE BUFFERBLOAT / ROUTING-VERGLEICH:
+- 145.254.2.19 (Vodafone Core): Min 63.85ms / Avg 129.85ms / Max 256.79ms
+- 1.1.1.1 (Cloudflare DNS): Min 65.07ms / Avg 114.69ms / Max 211.98ms
+- 8.8.8.8 (Google DNS): Min 41.70ms / Avg 162.89ms / Max 357.03ms
+- de-cix.net (Peering Core): Min 32.54ms / Avg 50.12ms / Max 72.86ms
+
+BEFUND: Systematischer Pufferüberlauf (Bufferbloat) am Node 145.254.2.19 bestätigt.

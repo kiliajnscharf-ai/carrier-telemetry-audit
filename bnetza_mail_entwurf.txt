@@ -1,0 +1,15 @@
+Betreff: Der PDF Bericht Check - Meldung Verbindungsqualitaet
+
+Sehr geehrte Damen und Herren,
+
+hiermit melde ich eine unzureichende Mobilfunkabdeckung an meinem Standort.
+Trotz mehrfacher Messungen mittels der Mobilfunk-Check-App bleibt die Verbindungsqualitaet unzureichend.
+
+Zudem rege ich folgende Verbesserungen fuer den PDF-Bericht an:
+- Integration detaillierterer Signalstaerke-Diagramme
+- Historische Messreihen zur Verlaufsanalyse
+- Verbesserte Offline-Erfassung bei Verbindungsabriss
+
+Anbei finden Sie die aktuellen Messdaten zur Pruefung.
+
+Mit freundlichen Gruessen

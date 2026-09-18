@@ -1,0 +1,14 @@
+STANDORT-AUDIT BAD PYRMONT (HAUS IM WIND)
+Problem: Chronische Unterversorgung / Fehlende Zelle
+
+Messwerte:
+- Frequenzband: 5G NSA / LTE Band 28 (700 MHz)
+- Signalpegel (RSRP): -118 dBm (Grenzbereich)
+- Signal-Rausch-Abstand (SNR): -1 dB
+- Timing Advance: 124 (Distanz: ca. 10-13 km nach Luede, Zelle 50515:31)
+- Durchsatz: 1.27 Mbit/s Download / 0.30 Mbit/s Upload
+- Latenzspitzen: bis zu 615.9 ms
+- Dienstausfaelle: Wiederkehrende HTTP-Timeouts (Status 000)
+
+Vollstaendige Messhistorie online dokumentiert unter:
+https://github.com/dein-user/cell-audit

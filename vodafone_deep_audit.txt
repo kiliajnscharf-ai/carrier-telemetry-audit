@@ -1,0 +1,18 @@
+=== VODAFONE DEEP AUDIT: BAARSEN ===
+Startzeit: 2026-09-15 10:18:17
+
+[1. PAKETVERLUST & JITTER (20 PAKETE)]
+20 packets transmitted, 19 received, 5% packet loss, time 3825ms
+rtt min/avg/max/mdev = 63.226/109.143/276.146/63.512 ms, pipe 2
+
+[2. TCP-VERBINDUNGSAUFBAU]
+DNS-Lookup: 0.109767s | TCP-Connect: 0.406129s | TTFB: 2.630363s | Gesamt: 3.757011s
+
+[3. DNS-LATENZVERGLEICH]
+Resolver 8.8.8.8 Latenz: 337.223 ms
+Resolver 1.1.1.1 Latenz: 60.251 ms
+
+[4. UPLOAD-NETTO-BENCHMARK (100 KB POST)]
+HTTP-Code: 000 | Upload-Speed: 6840 B/s | Upload-Dauer: 15.000096s
+
+=== AUDIT ERFOLGREICH BEENDET ===

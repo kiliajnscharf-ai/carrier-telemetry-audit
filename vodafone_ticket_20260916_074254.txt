@@ -1,0 +1,17 @@
+======================================================================
+VODAFONE CORE ROUTING / BUFFERBLOAT ANALYSE - TICKET BEHANG
+======================================================================
+Zielknoten: 145.254.2.19 (Vodafone Core Node)
+
+1. LEERLAUF (IDLE):
+   RTT min/avg/max/mdev = 19.901 / 25.403 / 93.119 / 10.804 ms (0% Loss)
+
+2. UNTER UPLOAD-LAST (10 MB STREAM):
+   RTT min/avg/max/mdev = 19.311 / 49.047 / 249.200 / 67.410 ms (0% Loss, pipe 2)
+
+BEFUND:
+- Kein physischer Paketverlust.
+- Massiver Pufferstau (Bufferbloat) am Node 145.254.2.19 mit Latenzanstieg > 240 ms.
+- Fehlendes oder fehlerhaft parametriertes AQM (Active Queue Management).
+- Bitte um Weiterleitung an das NOC / Core IP Engineering zur Queue-Anpassung.
+======================================================================

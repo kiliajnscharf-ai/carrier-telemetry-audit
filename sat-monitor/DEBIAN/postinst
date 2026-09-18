@@ -1,0 +1,6 @@
+#!/bin/bash
+chmod +x /usr/local/bin/sat_monitor.sh
+touch /var/log/sat_monitor.log
+
+# Autostart via cron
+(crontab -l 2>/dev/null; echo "@reboot nohup /usr/local/bin/sat_monitor.sh >/var/log/sat_monitor.log 2>&1 &") | crontab -

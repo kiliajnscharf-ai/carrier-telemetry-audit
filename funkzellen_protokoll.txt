@@ -1,0 +1,19 @@
+======================================================================
+VODAFONE FUNKZELLEN-DIAGNOSE (LEGALE CLIENT-PARAMETRIERUNG)
+======================================================================
+Datum / Zeit   : $(date +"%Y-%m-%d %H:%M:%S")
+Standort       : Bad Pyrmont
+
+MESSWERTE ZUR FUNKZELLE:
+- Mast / gNB-ID : [Hier gNodeB-ID eintragen]
+- Cell-ID (CID) : [Hier Cell-ID eintragen]
+- Frequenzband  : [z.B. Band 20 / Band 28 / 5G n28]
+- PCI           : [Hier PCI eintragen]
+- RSRP (dBm)    : [z.B. -95 dBm]
+- SINR (dB)     : [z.B. 4 dB]
+
+FEHLVERHALTEN:
+Trotz ausreichender Signalabdeckung bricht der Scheduler/Queue-Puffer
+unter Upload-Last zusammen (Bufferbloat > 200 ms). Verdacht auf
+Fehlkonfiguration des Timers / Buffer-Managements auf Sektorebene.
+======================================================================

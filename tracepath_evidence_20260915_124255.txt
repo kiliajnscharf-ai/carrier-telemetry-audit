@@ -1,0 +1,10 @@
+ 1?: [LOCALHOST]                      pmtu 1500
+ 1:  no reply
+ 2:  no reply
+ 3:  no reply
+ 4:  no reply
+ 5:  no reply
+ 6:  ipservice-092-214-120-019.092.214.pools.vodafone-ip.de 137.377ms asymm  7 
+ 7:  ipservice-092-214-120-016.092.214.pools.vodafone-ip.de 122.994ms 
+ 8:  145.254.2.179                                        96.804ms 
+ 9:  

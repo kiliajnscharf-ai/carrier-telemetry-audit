@@ -1,0 +1,6 @@
+=== VODAFONE LANGZEIT-AUDIT PROTOKOLL ===
+Messpunkte gesamt : 50
+Fehlerhafte Zyklen: 31
+Ausfall-/Mangelrate: 62.0 %
+Zeitraum          : 10:27 - 11:34 Uhr (66 Minuten)
+Befund            : Systematischer Uplink-Kollaps / Zellsättigung

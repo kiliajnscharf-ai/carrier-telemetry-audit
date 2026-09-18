@@ -1,0 +1,23 @@
+TICKET-UPDATE: LIVE-TELEMETRIE & AQM-REFERENZARCHITEKTUR
+Ziel-Knoten: 145.254.2.19 (Vodafone Core AS3209)
+
+Sehr geehrtes NOC-Team,
+
+zur Behebung des chronischen Bufferbloats am Interface 145.254.2.19
+stellen wir Ihnen die aktuellen Live-Telemetriedaten zur Verfuegung:
+
+IST-ZUSTAND (Unreguliertes FIFO):
+- Baseline-RTT: 42.28 ms
+- Median (p50): 164.01 ms
+- 95. Perzentil (p95): 1122.47 ms
+- Maximaler Peak: 2795.43 ms
+- Paketverlust: bis zu 90.0 % (destruktiver Tail-Drop)
+
+SOLL-ARCHITEKTUR (FQ-CoDel / CAKE gemaess RFC 8290):
+- Flow-Isolation: Trennung zeitkritischer ICMP/DNS-Stroeme von Bulk-Traffic.
+- Buffer-Sizing: Dynamische Queue-Begrenzung auf 1x BDP.
+- ECN-Marking (RFC 3168): Fruehzeitige Staudrosselung ohne physischen Drop.
+- Ziel-Latenz unter Volllast: < 35.00 ms kontinuierlich.
+
+Die vollstaendige JSON-Telemetrie steht zur Einspeisung in Ihre
+Monitoring-Systeme bereit. Bitte im naechsten Wartungsfenster anwenden.

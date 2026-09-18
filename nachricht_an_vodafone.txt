@@ -1,0 +1,21 @@
+Betreff: Störungsmeldung: Core-Routing & Bufferbloat am Node 145.254.2.19 (Weiterleitung an 2nd/3rd-Level / NOC erbeten)
+
+Sehr geehrtes Vodafone-Technikteam,
+
+hiermit melde ich eine reproduzierbare Performance-Störung auf Routing-Ebene, die zu massivem Bufferbloat führt. Die Einschränkung betrifft den Vodafone-Kernknoten 145.254.2.19.
+
+Lokale Ursachen (Endgerätefehler, WLAN, physische Luftschnittstellen-Abbrüche) wurden durch Messreihen ausgeschlossen. Die Basis-Latenz im Leerlauf ist einwandfrei, bricht jedoch unter Last reproduzierbar ein.
+
+Empirische Messwerte:
+1. Leerlauf (Idle):
+   RTT min/avg/max/mdev = 19.901 / 25.403 / 93.119 / 10.804 ms (0 % Paketverlust)
+2. Unter Upload-Last:
+   RTT min/avg/max/mdev = 19.311 / 49.047 / 249.200 / 67.410 ms (0 % Paketverlust, pipe 2)
+
+Befund:
+Reines Pufferüberlauf-Phänomen am Hop 145.254.2.19 ohne Paketverlust. Fehlendes/fehlerhaftes Active Queue Management (AQM).
+
+Bitte leiten Sie dieses Ticket direkt an das NOC / Core IP Engineering zur Queue-Anpassung weiter.
+
+Mit freundlichen Grüßen
+Kilian Scharf
